@@ -1,5 +1,6 @@
 package com.example.owner.traffickcam;
 
+import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.content.Intent;
@@ -11,11 +12,18 @@ public class MainActivity extends AppCompatActivity {
 
     String default_hotel;
     String default_room;
+    EditText rn;
+    EditText hn;
+
+    static final int REQUEST_IMAGE_CAPTURE = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        rn = (EditText) findViewById(R.id.room_number);
+        hn = (EditText) findViewById(R.id.hotel_name);
 
         default_hotel = this.getResources().getString(R.string.default_hotel);
         default_room = this.getResources().getString(R.string.default_room);
@@ -24,8 +32,6 @@ public class MainActivity extends AppCompatActivity {
     /** called when user presses button **/
     public void startCamera(View view)
     {
-        EditText rn = (EditText) findViewById(R.id.room_number);
-        EditText hn = (EditText) findViewById(R.id.hotel_name);
         String room_number = rn.getText().toString();
         String hotel_name = hn.getText().toString();
 
@@ -36,8 +42,10 @@ public class MainActivity extends AppCompatActivity {
         }
         else
         {
-            Intent intent = new Intent(this, CameraActivity.class);
-            startActivity(intent);
+            Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+            if (takePictureIntent.resolveActivity(getPackageManager()) != null) {
+                startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE);
+            }
         }
     }
 

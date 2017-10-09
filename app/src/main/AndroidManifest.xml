@@ -3,9 +3,10 @@
     package="com.example.owner.traffickcam">
 
     <!--
-        gets permission to use the camera and save photos
+        gets permission to use the camera
     -->
-    <uses-permission-sdk-23 android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera"
+        android:required="true" />
 
 
     <application
@@ -22,7 +23,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CameraActivity"></activity>
     </application>
 
 </manifest>
