@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TraffickCam</string>
+    <string name="default_hotel">Hotel</string>
+    <string name="default_room">Room Number</string>
+</resources>
