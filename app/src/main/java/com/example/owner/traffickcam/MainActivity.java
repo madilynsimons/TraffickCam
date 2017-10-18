@@ -7,6 +7,10 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import java.io.File;
+
+import io.fotoapparat.Fotoapparat;
+
 public class MainActivity extends AppCompatActivity {
 
     String default_hotel;
@@ -18,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -31,14 +36,17 @@ public class MainActivity extends AppCompatActivity {
     /** called when user presses button **/
     public void startCamera(View view)
     {
-        if(! isValidHotel() )
+        boolean valid = isValidHotel();
+        valid = true;
+        if(! valid )
         {
             Toast.makeText(this, R.string.invalid_hotel_input, Toast.LENGTH_LONG).show();
         }
         else
         {
-            Intent intent = new Intent(this, TraffickCameraActivity.class);
+            Intent intent = new Intent(this, TraffickCamFotoActivity.class);
             startActivity(intent);
+
         }
     }
 
