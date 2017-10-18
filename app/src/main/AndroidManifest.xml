@@ -33,7 +33,15 @@
         <activity android:name=".TestActivity" />
         <activity android:name=".FotoActivity" />
         <activity android:name=".TraffickCamFotoActivity" />
-        <activity android:name=".PreviewActivity"></activity>
+        <activity android:name=".PreviewActivity" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBdgpoeZW--zfKKZHgxLVwYOjbXrVcCcLM" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
     </application>
 
 </manifest>

@@ -27,9 +27,11 @@ dependencies {
     repositories {
         maven { url 'https://jitpack.io' }
     }
+
     compile 'com.android.support:appcompat-v7:26.0.0-alpha1'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'com.android.support:design:26.+'
     compile 'io.fotoapparat.fotoapparat:library:1.4.1'
+    compile 'com.google.android.gms:play-services-location:8.1.0'
     testCompile 'junit:junit:4.12'
 }
