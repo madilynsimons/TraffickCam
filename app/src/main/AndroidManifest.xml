@@ -32,7 +32,8 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".TestActivity" />
         <activity android:name=".FotoActivity" />
-        <activity android:name=".TraffickCamFotoActivity"></activity>
+        <activity android:name=".TraffickCamFotoActivity" />
+        <activity android:name=".PreviewActivity"></activity>
     </application>
 
 </manifest>

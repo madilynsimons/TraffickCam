@@ -1,7 +1,9 @@
 package com.example.owner.traffickcam;
 
 import android.Manifest;
+import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
@@ -15,6 +17,10 @@ import android.widget.SeekBar;
 import android.widget.Toast;
 
 import java.io.File;
+import java.util.Arrays;
+import java.util.List;
+import java.util.ListIterator;
+import java.util.Random;
 
 import io.fotoapparat.Fotoapparat;
 import io.fotoapparat.FotoapparatSwitcher;
@@ -57,13 +63,20 @@ public class TraffickCamFotoActivity extends AppCompatActivity {
     private CameraView cameraView;
 
     private FotoapparatSwitcher fotoapparatSwitcher;
-    private Fotoapparat frontFotoapparat;
-    private Fotoapparat backFotoapparat;
+    private Fotoapparat fotoapparat;
+
+    protected List<String> s = Arrays.asList(
+            "window", "bed", "TV", "bathroom"
+    );
+    protected ListIterator<String> subjects;
+    protected String currentSubject;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_traffick_cam_foto);
+
+        subjects = s.listIterator();
 
         cameraView = (CameraView) findViewById(R.id.camera_view);
         hasCameraPermission = permissionsDelegate.hasCameraPermission();
@@ -76,40 +89,26 @@ public class TraffickCamFotoActivity extends AppCompatActivity {
 
         setupFotoapparat();
 
-        takePictureOnClick();
         focusOnLongClick();
-        switchCameraOnClick();
         toggleTorchOnSwitch();
-        zoomSeekBar();
+
+        printText();
+    }
+
+    protected void printText()
+    {
+        currentSubject = subjects.next();
+        Toast.makeText(this, getString(R.string.take_pic_message) + " " + currentSubject + ".", Toast.LENGTH_LONG).show();
+    }
+
+    protected void printText(String text)
+    {
+        Toast.makeText(this, text, Toast.LENGTH_LONG).show();
     }
 
     private void setupFotoapparat() {
-        frontFotoapparat = createFotoapparat(LensPosition.FRONT);
-        backFotoapparat = createFotoapparat(LensPosition.BACK);
-        fotoapparatSwitcher = FotoapparatSwitcher.withDefault(backFotoapparat);
-    }
-
-    private void zoomSeekBar() {
-        SeekBar seekBar = (SeekBar) findViewById(R.id.zoomSeekBar);
-
-        seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
-            @Override
-            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                fotoapparatSwitcher
-                        .getCurrentFotoapparat()
-                        .setZoom(progress / (float) seekBar.getMax());
-            }
-
-            @Override
-            public void onStartTrackingTouch(SeekBar seekBar) {
-                // Do nothing
-            }
-
-            @Override
-            public void onStopTrackingTouch(SeekBar seekBar) {
-                // Do nothing
-            }
-        });
+        fotoapparat = createFotoapparat(LensPosition.BACK);
+        fotoapparatSwitcher = FotoapparatSwitcher.withDefault(fotoapparat);
     }
 
     private void toggleTorchOnSwitch() {
@@ -133,25 +132,6 @@ public class TraffickCamFotoActivity extends AppCompatActivity {
         });
     }
 
-    private void switchCameraOnClick() {
-        View switchCameraButton = findViewById(R.id.switchCamera);
-        switchCameraButton.setVisibility(
-                canSwitchCameras()
-                        ? View.VISIBLE
-                        : View.GONE
-        );
-        switchCameraOnClick(switchCameraButton);
-    }
-
-    private void switchCameraOnClick(View view) {
-        view.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                switchCamera();
-            }
-        });
-    }
-
     private void focusOnLongClick() {
         cameraView.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
@@ -163,17 +143,13 @@ public class TraffickCamFotoActivity extends AppCompatActivity {
         });
     }
 
-    private void takePictureOnClick() {
-        cameraView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                takePicture();
-            }
-        });
-    }
+    public void takePictureOnClick(View view)
+    {
+        takePicture();
 
-    private boolean canSwitchCameras() {
-        return frontFotoapparat.isAvailable() == backFotoapparat.isAvailable();
+        if(subjects.hasNext() == false) exit();
+        else printText();
+
     }
 
     private Fotoapparat createFotoapparat(LensPosition position) {
@@ -212,15 +188,21 @@ public class TraffickCamFotoActivity extends AppCompatActivity {
     }
 
     private void takePicture() {
-        PhotoResult photoResult = fotoapparatSwitcher.getCurrentFotoapparat().takePicture();
 
-        photoResult.saveToFile(new File(
-                getExternalFilesDir("photos"),
-                "photo.jpg"
-        ));
+        PhotoResult photoResult = fotoapparat.takePicture();
+
+        String path = getExternalFilesDir("photos") + "/" + currentSubject + ".jpg";
+
+        File photoFile = new File(path);
+
+        photoResult.saveToFile(photoFile);
+
+        printText("Photo saved to file " + path);
+
+        /**
 
         photoResult
-                .toBitmap(scaled(0.25f))
+                .toBitmap()
                 .whenAvailable(new PendingResult.Callback<BitmapPhoto>() {
                     @Override
                     public void onResult(BitmapPhoto result) {
@@ -230,14 +212,14 @@ public class TraffickCamFotoActivity extends AppCompatActivity {
                         imageView.setRotation(-result.rotationDegrees);
                     }
                 });
+         */
+
     }
 
-    private void switchCamera() {
-        if (fotoapparatSwitcher.getCurrentFotoapparat() == frontFotoapparat) {
-            fotoapparatSwitcher.switchTo(backFotoapparat);
-        } else {
-            fotoapparatSwitcher.switchTo(frontFotoapparat);
-        }
+    protected void exit()
+    {
+        Intent exit = new Intent(this, ExitActivity.class);
+        startActivity(exit);
     }
 
     @Override
