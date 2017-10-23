@@ -22,26 +22,12 @@ import com.google.android.gms.location.places.ui.PlacePicker;
 
 public class MainActivity extends AppCompatActivity {
 
-    /** called when user presses button **/
-    public void startCamera(View view)
-    {
-        boolean valid = true;
-        if(! valid )
-        {
-            Toast.makeText(this, R.string.invalid_hotel_input, Toast.LENGTH_LONG).show();
-        }
-        else
-        {
-            Intent intent = new Intent(this, TraffickCamFotoActivity.class);
-            startActivity(intent);
-
-        }
-    }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Intent intent = new Intent(this, TraffickCamFotoActivity.class);
+        startActivity(intent);
     }
 
 }

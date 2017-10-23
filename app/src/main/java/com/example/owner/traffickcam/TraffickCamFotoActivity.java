@@ -91,12 +91,18 @@ public class TraffickCamFotoActivity extends AppCompatActivity {
 
         focusOnLongClick();
         toggleTorchOnSwitch();
+        zoomSeekBar();
 
         printText();
     }
 
     protected void printText()
     {
+        //  TODO
+        //  Toast is temporary...  Should eventually change to drawing on the screen
+        //  or text box
+        //  Toast disappears after a few seconds...  We want the text to be there
+        //  until a specified period of time
         currentSubject = subjects.next();
         Toast.makeText(this, getString(R.string.take_pic_message) + " " + currentSubject + ".", Toast.LENGTH_LONG).show();
     }
@@ -109,6 +115,29 @@ public class TraffickCamFotoActivity extends AppCompatActivity {
     private void setupFotoapparat() {
         fotoapparat = createFotoapparat(LensPosition.BACK);
         fotoapparatSwitcher = FotoapparatSwitcher.withDefault(fotoapparat);
+    }
+
+    private void zoomSeekBar() {
+        SeekBar seekBar = (SeekBar) findViewById(R.id.zoomSeekBar);
+
+        seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                fotoapparatSwitcher
+                        .getCurrentFotoapparat()
+                        .setZoom(progress / (float) seekBar.getMax());
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+                // Do nothing
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+                // Do nothing
+            }
+        });
     }
 
     private void toggleTorchOnSwitch() {
@@ -197,7 +226,7 @@ public class TraffickCamFotoActivity extends AppCompatActivity {
 
         photoResult.saveToFile(photoFile);
 
-        printText("Photo saved to file " + path);
+        // printText("Photo saved to file " + path);
 
         /**
 

@@ -21,7 +21,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CameraActivity" />
         <activity
             android:name=".TraffickCameraActivity"
             android:label="@string/title_activity_traffick_camera"
@@ -31,9 +30,7 @@
             android:label="@string/title_activity_exit"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".TestActivity" />
-        <activity android:name=".FotoActivity" />
         <activity android:name=".TraffickCamFotoActivity" />
-        <activity android:name=".PreviewActivity" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
