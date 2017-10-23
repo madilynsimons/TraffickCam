@@ -16,6 +16,11 @@ import android.widget.ImageView;
 import android.widget.SeekBar;
 import android.widget.Toast;
 
+import com.google.android.gms.location.places.Place;
+import com.google.android.gms.location.places.ui.PlacePicker;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.LatLngBounds;
+
 import java.io.File;
 import java.util.Arrays;
 import java.util.List;
@@ -247,8 +252,13 @@ public class TraffickCamFotoActivity extends AppCompatActivity {
 
     protected void exit()
     {
+        /*  TODO -- this is temporary
         Intent exit = new Intent(this, ExitActivity.class);
         startActivity(exit);
+        */
+
+        Intent confirmHotel = new Intent(this, PlacePickerActivity.class);
+        startActivity(confirmHotel);
     }
 
     @Override
