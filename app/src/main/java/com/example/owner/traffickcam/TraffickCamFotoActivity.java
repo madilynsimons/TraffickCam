@@ -257,7 +257,7 @@ public class TraffickCamFotoActivity extends AppCompatActivity {
         startActivity(exit);
         */
 
-        Intent confirmHotel = new Intent(this, PlacePickerActivity.class);
+        Intent confirmHotel = new Intent(this, ConfirmHotelActivity.class);
         startActivity(confirmHotel);
     }
 
