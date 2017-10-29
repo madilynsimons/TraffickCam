@@ -1,10 +1,13 @@
 package com.example.owner.traffickcam;
 
 import android.Manifest;
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Point;
+import android.location.Criteria;
 import android.location.Location;
+import android.location.LocationManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -36,8 +39,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 public class ConfirmHotelActivity extends FragmentActivity implements OnMapReadyCallback,
         GoogleApiClient.ConnectionCallbacks,
         GoogleApiClient.OnConnectionFailedListener,
-        com.google.android.gms.location.LocationListener,
-        GoogleMap.OnMarkerClickListener {
+        com.google.android.gms.location.LocationListener{
 
 
     private GoogleMap mMap;
@@ -105,7 +107,38 @@ public class ConfirmHotelActivity extends FragmentActivity implements OnMapReady
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
             bulidGoogleApiClient();
             mMap.setMyLocationEnabled(true);
+            mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener()
+            {
+                @Override
+                public boolean onMarkerClick(Marker marker) {
+                    final int dX = getResources().getDimensionPixelSize(R.dimen.map_dx);
+                    final int dY = getResources().getDimensionPixelSize(R.dimen.map_dy);
+                    final Projection projection = mMap.getProjection();
+                    final Point markerPoint = projection.toScreenLocation(
+                            marker.getPosition()
+                    );
+
+                    markerPoint.offset(dX, dY);
+                    final LatLng newLatLng = projection.fromScreenLocation(markerPoint);
+
+                    mMap.animateCamera(CameraUpdateFactory.newLatLng(newLatLng));
+
+                    marker.showInfoWindow();
+                    locationText.setText(marker.getTitle(), TextView.BufferType.EDITABLE);
+                    return true;
+                }
+            });
+
+            LocationManager locationManager = (LocationManager)
+                    getSystemService(Context.LOCATION_SERVICE);
+            Criteria criteria = new Criteria();
+
+            Location location = locationManager.getLastKnownLocation(locationManager
+                    .getBestProvider(criteria, false));
+            LatLng coords = new LatLng(location.getLatitude(), location.getLongitude());
+            mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(coords, 1));
         }
+        //  TODO -- create markers and select closest one by default
     }
 
 
@@ -138,6 +171,11 @@ public class ConfirmHotelActivity extends FragmentActivity implements OnMapReady
 
     public void searchOnClick(View v)
     {
+        searchNearbyHotels();
+    }
+
+    private void searchNearbyHotels()
+    {
         Object dataTransfer[] = new Object[2];
         Hotel getNearbyPlacesData = new Hotel();
 
@@ -148,33 +186,6 @@ public class ConfirmHotelActivity extends FragmentActivity implements OnMapReady
         dataTransfer[1] = url;
 
         getNearbyPlacesData.execute(dataTransfer);
-
-
-        mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener()
-        {
-            @Override
-            public boolean onMarkerClick(Marker marker) {
-                final int dX = getResources().getDimensionPixelSize(R.dimen.map_dx);
-                final int dY = getResources().getDimensionPixelSize(R.dimen.map_dy);
-                final Projection projection = mMap.getProjection();
-                final Point markerPoint = projection.toScreenLocation(
-                        marker.getPosition()
-                );
-
-                markerPoint.offset(dX, dY);
-                final LatLng newLatLng = projection.fromScreenLocation(markerPoint);
-
-                mMap.animateCamera(CameraUpdateFactory.newLatLng(newLatLng));
-
-                marker.showInfoWindow();
-                locationText.setText(marker.getTitle(), TextView.BufferType.EDITABLE);
-                return true;
-            }
-
-        });
-
-       // Toast.makeText(ConfirmHotelActivity.this, "Showing Nearby Hotels", Toast.LENGTH_SHORT).show();
-
     }
 
     public void exitOnClick(View v)
@@ -243,9 +254,4 @@ public class ConfirmHotelActivity extends FragmentActivity implements OnMapReady
     public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
     }
 
-    @Override
-    public boolean onMarkerClick(Marker marker) {
-        Toast.makeText(ConfirmHotelActivity.this, "CLICK", Toast.LENGTH_SHORT).show();
-        return false;
-    }
 }
