@@ -16,5 +16,29 @@
         android:layout_marginLeft="8dp"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent" />
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="302dp"
+        android:layout_height="276dp"
+        tools:context="com.example.priyanka.mapsdemo.MapsActivity"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        map:layout_constraintLeft_toLeftOf="parent"
+        map:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        map:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        map:layout_constraintTop_toBottomOf="@+id/currentButton"
+        tools:layout_editor_absoluteY="17dp"
+        tools:layout_editor_absoluteX="-44dp" />
 </android.support.constraint.ConstraintLayout>
