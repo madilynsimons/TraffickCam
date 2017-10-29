@@ -1,27 +1,24 @@
 package com.example.owner.traffickcam;
 
 import android.os.AsyncTask;
-import android.util.Log;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 
-/**
- * Created by Owner on 10/29/2017.
- */
-
-public class Hotel extends AsyncTask<Object, String, String> {
+public class Hotel extends AsyncTask<Object, String, String>{
 
     private String googlePlacesData;
     private GoogleMap mMap;
     String url;
+    public List<HashMap<String, String>> nearbyPlaceList;
 
     @Override
     protected String doInBackground(Object... objects)
@@ -44,8 +41,6 @@ public class Hotel extends AsyncTask<Object, String, String> {
 
     @Override
     protected void onPostExecute(String s){
-
-        List<HashMap<String, String>> nearbyPlaceList;
         DataParser parser = new DataParser();
         nearbyPlaceList = parser.parse(s);
         showNearbyPlaces(nearbyPlaceList);
@@ -73,5 +68,4 @@ public class Hotel extends AsyncTask<Object, String, String> {
             mMap.animateCamera(CameraUpdateFactory.zoomTo(10));
         }
     }
-
 }

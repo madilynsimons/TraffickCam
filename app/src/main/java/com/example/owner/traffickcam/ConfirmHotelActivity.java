@@ -3,10 +3,8 @@ package com.example.owner.traffickcam;
 import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.location.Address;
-import android.location.Geocoder;
+import android.graphics.Point;
 import android.location.Location;
-import android.location.LocationListener;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -14,23 +12,19 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.content.ContextCompat;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.common.ConnectionResult;
-import com.google.android.gms.common.GooglePlayServicesNotAvailableException;
-import com.google.android.gms.common.GooglePlayServicesRepairableException;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.LocationServices;
-import com.google.android.gms.location.places.AutocompleteFilter;
-import com.google.android.gms.location.places.Place;
-import com.google.android.gms.location.places.ui.PlaceAutocomplete;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.Projection;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
@@ -38,23 +32,22 @@ import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-import java.io.IOException;
-import java.util.List;
-
 
 public class ConfirmHotelActivity extends FragmentActivity implements OnMapReadyCallback,
         GoogleApiClient.ConnectionCallbacks,
         GoogleApiClient.OnConnectionFailedListener,
-        com.google.android.gms.location.LocationListener {
+        com.google.android.gms.location.LocationListener,
+        GoogleMap.OnMarkerClickListener {
 
 
     private GoogleMap mMap;
     private GoogleApiClient client;
     private LocationRequest locationRequest;
-    private Location lastlocation;
     public static final int REQUEST_LOCATION_CODE = 99;
     int PROXIMITY_RADIUS = 10000;
     double latitude,longitude;
+    EditText locationText;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -69,6 +62,8 @@ public class ConfirmHotelActivity extends FragmentActivity implements OnMapReady
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+
+        locationText = (EditText) findViewById(R.id.locationText);
     }
 
     @Override
@@ -125,7 +120,6 @@ public class ConfirmHotelActivity extends FragmentActivity implements OnMapReady
 
         latitude = location.getLatitude();
         longitude = location.getLongitude();
-        lastlocation = location;
 
         Log.d("lat = ",""+latitude);
         LatLng latLng = new LatLng(location.getLatitude() , location.getLongitude());
@@ -142,7 +136,7 @@ public class ConfirmHotelActivity extends FragmentActivity implements OnMapReady
         }
     }
 
-    public void onClick(View v)
+    public void searchOnClick(View v)
     {
         Object dataTransfer[] = new Object[2];
         Hotel getNearbyPlacesData = new Hotel();
@@ -154,10 +148,40 @@ public class ConfirmHotelActivity extends FragmentActivity implements OnMapReady
         dataTransfer[1] = url;
 
         getNearbyPlacesData.execute(dataTransfer);
-        Toast.makeText(ConfirmHotelActivity.this, "Showing Nearby Hotels", Toast.LENGTH_SHORT).show();
+
+
+        mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener()
+        {
+            @Override
+            public boolean onMarkerClick(Marker marker) {
+                final int dX = getResources().getDimensionPixelSize(R.dimen.map_dx);
+                final int dY = getResources().getDimensionPixelSize(R.dimen.map_dy);
+                final Projection projection = mMap.getProjection();
+                final Point markerPoint = projection.toScreenLocation(
+                        marker.getPosition()
+                );
+
+                markerPoint.offset(dX, dY);
+                final LatLng newLatLng = projection.fromScreenLocation(markerPoint);
+
+                mMap.animateCamera(CameraUpdateFactory.newLatLng(newLatLng));
+
+                marker.showInfoWindow();
+                locationText.setText(marker.getTitle(), TextView.BufferType.EDITABLE);
+                return true;
+            }
+
+        });
+
+       // Toast.makeText(ConfirmHotelActivity.this, "Showing Nearby Hotels", Toast.LENGTH_SHORT).show();
 
     }
 
+    public void exitOnClick(View v)
+    {
+        Intent intent = new Intent(this, ExitActivity.class);
+        startActivity(intent);
+    }
 
     private String getUrl(double latitude , double longitude , String nearbyPlace)
     {
@@ -217,5 +241,11 @@ public class ConfirmHotelActivity extends FragmentActivity implements OnMapReady
 
     @Override
     public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
+    }
+
+    @Override
+    public boolean onMarkerClick(Marker marker) {
+        Toast.makeText(ConfirmHotelActivity.this, "CLICK", Toast.LENGTH_SHORT).show();
+        return false;
     }
 }

@@ -14,9 +14,6 @@ public class ExitActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_exit);
-
-        Intent confirmHotel = new Intent(this, ConfirmHotelActivity.class);
-        startActivity(confirmHotel);
     }
 
 }
