@@ -182,7 +182,7 @@ public class TraffickCamFotoActivity extends AppCompatActivity {
         takePicture();
 
         if(subjects.hasNext() == false) exit();
-        else printText();
+        //else printText();
 
     }
 
@@ -233,20 +233,21 @@ public class TraffickCamFotoActivity extends AppCompatActivity {
 
         // printText("Photo saved to file " + path);
 
-        /**
-
         photoResult
                 .toBitmap()
                 .whenAvailable(new PendingResult.Callback<BitmapPhoto>() {
                     @Override
                     public void onResult(BitmapPhoto result) {
+                        if(subjects.hasNext()) printText();
+                        /**
                         ImageView imageView = (ImageView) findViewById(R.id.result);
 
                         imageView.setImageBitmap(result.bitmap);
                         imageView.setRotation(-result.rotationDegrees);
+                         */
                     }
                 });
-         */
+
 
     }
 
