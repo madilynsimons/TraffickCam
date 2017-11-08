@@ -253,13 +253,13 @@ public class TraffickCamFotoActivity extends AppCompatActivity {
 
     protected void exit()
     {
-        /*  TODO -- this is temporary
         Intent exit = new Intent(this, ExitActivity.class);
         startActivity(exit);
-        */
 
-        Intent confirmHotel = new Intent(this, ConfirmHotelActivity.class);
+
+        /*Intent confirmHotel = new Intent(this, ConfirmHotelListActivity.class);
         startActivity(confirmHotel);
+        */
     }
 
     @Override

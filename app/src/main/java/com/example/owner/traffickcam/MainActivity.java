@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
        Intent intent = new Intent(this, TraffickCamFotoActivity.class);
-       // Intent intent = new Intent(this, ConfirmHotelActivity.class);
+       // Intent intent = new Intent(this, ConfirmHotelListActivity.class);
         startActivity(intent);
     }
 

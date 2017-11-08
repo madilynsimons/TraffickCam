@@ -1,0 +1,825 @@
+{
+  "html_attributions" : [],
+  "next_page_token" : "CqQCGAEAAOBFA723dS-BoATa5ubshvV8mxOb60wDae096-k15k2sAS8iD194QgSg77Pbiv0PL0kLKzw9sGVcGVGLTvL-6hKlvsm8zRiOGg72fLbzK844R6NG356wZcnb2dFSrqAGSv2O-5FgSckGsFspXiE7vu7jnbFds8As6tl_meHiOsOZb_ppB-uPyIK50Juf9wIM7oJmW4erf8mIQpEj4ey0JgUVMU83LcA_Sy3MBND4cwBXhKLaQZbcsaNlnQ3juxRAlMf1xR8NGKESQQv5LVvMB5pHYf1mQiO4une4o4TdhinmCR_M2WlTs8YNdtag11icnQVxMZ3UBrQJXn7Fwi5EMU6qtlLYs0QaVLAx75c9t7L1LixZu10ohcV80eW4956g3RIQsD1CM8l5HNcDqtWtzFdXmBoU5E_oXRzZyhXYmVLEASGMYgE9vpQ",
+  "results" : [
+    {
+      "geometry" : {
+        "location" : {
+          "lat" : 39.95126239999999,
+          "lng" : -75.1643019
+        },
+        "viewport" : {
+          "northeast" : {
+            "lat" : 39.95279838029149,
+            "lng" : -75.16286046970848
+          },
+          "southwest" : {
+            "lat" : 39.95010041970849,
+            "lng" : -75.1655584302915
+          }
+        }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+      "id" : "6b1bb3c8ae67bb6eb9ea39c6a95e7f386f4b82c3",
+      "name" : "The Ritz-Carlton, Philadelphia",
+      "opening_hours" : {
+        "open_now" : true,
+        "weekday_text" : []
+      },
+      "photos" : [
+        {
+          "height" : 1749,
+          "html_attributions" : [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/110307673324163831209/photos\"\u003eThe Ritz-Carlton, Philadelphia\u003c/a\u003e"
+          ],
+          "photo_reference" : "CmRaAAAAM04DDN9YV3lhg3ZqF7K6nxWTAhii6fumWFpJsEOik4TvuG520lmHQlv4B50J2ZawKidH30DroF1LzW6tgDxG6-1yp4WLlaQ6-5mMxVe_e_b_I_fwRNzgau-P_DDvLKnvEhCp0h9BnAtniGDFITxSsfarGhTrsvs_TrQgan1K10-lZ6VSVKXRpA",
+          "width" : 2000
+        }
+      ],
+      "place_id" : "ChIJv51-sC_GxokR6fV5EFtVIyc",
+      "price_level" : 3,
+      "rating" : 4.5,
+      "reference" : "CmRRAAAAdIJflw8uD6Q7HezkumlE-StIozZDWFCfC7eoiLTNm_EtkZ4tsgYiaXmppypqobbw3qAL2DeOV_0wxvW75ZMt4ZojnJg9knvz9Ekyw84c4XufifajZyGVB9JXY30epFOzEhC14Zjmoq5ryLVOCWBJRMx_GhRxeo0q1cPY1mrGhwYlDyQvWDofRg",
+      "scope" : "GOOGLE",
+      "types" : [ "lodging", "point_of_interest", "establishment" ],
+      "vicinity" : "10 Avenue Of The Arts, Philadelphia"
+    },
+    {
+      "geometry" : {
+        "location" : {
+          "lat" : 39.9526437,
+          "lng" : -75.1622141
+        },
+        "viewport" : {
+          "northeast" : {
+            "lat" : 39.9539869302915,
+            "lng" : -75.1610251197085
+          },
+          "southwest" : {
+            "lat" : 39.9512889697085,
+            "lng" : -75.1637230802915
+          }
+        }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+      "id" : "b07a03dfad6106cac7c5c2b1c7b4dfca76174ee1",
+      "name" : "Residence Inn by Marriott Philadelphia Center City",
+      "opening_hours" : {
+        "open_now" : true,
+        "weekday_text" : []
+      },
+      "photos" : [
+        {
+          "height" : 2400,
+          "html_attributions" : [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/109747268544327258077/photos\"\u003eResidence Inn by Marriott Philadelphia Center City\u003c/a\u003e"
+          ],
+          "photo_reference" : "CmRaAAAAEfAAUBNhcfASsyzj8_tOZw6lY3I2aSFScBkdWB7WM9jnROy6ZWKE31h66sTuSV2rAdDwLCJFGlBnLcn7mhsDLd3KEBIc7Jna9FUOFuLNaSX5HQIodNr4H_G64svSS9DzEhDFji9W0JLb9siJtw-wutH9GhR-o_SvNCk-GU2agHafAopezmoBRQ",
+          "width" : 3600
+        }
+      ],
+      "place_id" : "ChIJdTu_7S7GxokR97kxJyXerfU",
+      "rating" : 4.1,
+      "reference" : "CmRSAAAARBSIm-Fxq1dHisbQ1OdW0t25RY-svg88xPkSm6GFBeycvKjfMKmsoluM-fGCn7cP_1-m5ybgS3lBXAPhirTkOWtqwfe530dQ86t3uQrnInWtIsRWE_w3OAQcyYLRGTNOEhCPppXGSg4YuOKcSinFaAQrGhRNZZmB24lp1U_0W64SssDrbWppFg",
+      "scope" : "GOOGLE",
+      "types" : [ "lodging", "point_of_interest", "establishment" ],
+      "vicinity" : "1 East Penn Square, Philadelphia"
+    },
+    {
+      "geometry" : {
+        "location" : {
+          "lat" : 39.95486700000001,
+          "lng" : -75.16414139999999
+        },
+        "viewport" : {
+          "northeast" : {
+            "lat" : 39.9560532802915,
+            "lng" : -75.16282796970849
+          },
+          "southwest" : {
+            "lat" : 39.9533553197085,
+            "lng" : -75.16552593029151
+          }
+        }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+      "id" : "b7944ac19221637bf11abb14f4f1e877a239a9df",
+      "name" : "Le Méridien Philadelphia",
+      "photos" : [
+        {
+          "height" : 3839,
+          "html_attributions" : [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/104314711510842309587/photos\"\u003eLe Méridien Philadelphia\u003c/a\u003e"
+          ],
+          "photo_reference" : "CmRaAAAAWOQ82EsZXi_v2rcb2dWqvgXzDAf7ELE2Xc1O1xUzRVoLkDdUSBRP9zyCh3OPYavMk3WCgeBGI_ogHxoBilr-nl1CsijrH4ml8jZ9ZZpxPbsLUf52uQFD01OfQEA4ZMEtEhAoSpIeu6joQWimyMpwWioJGhSdsEbxfKsRCzeEQ6NNgcSdgk4xQA",
+          "width" : 2703
+        }
+      ],
+      "place_id" : "ChIJNyI72i3GxokRbboLZHgUf_8",
+      "rating" : 4.3,
+      "reference" : "CmRSAAAAnXp5gZha8stq4dstibuh5cQt-EVB3AS-38ItrpVvZpEW0oLQkEBM2GAfdkSsB8KBNEg5bZPvdAPrYPBT5EgYpr-ks0xqfR_qKP2DCu6fLk7HZ-2qiKDa2f1VEwisiIwFEhDLm_AEIksUUlrKIzFYYbFRGhQODnMc_nNfpU9b-6TA10QYVzH-cg",
+      "scope" : "GOOGLE",
+      "types" : [ "lodging", "restaurant", "food", "point_of_interest", "establishment" ],
+      "vicinity" : "1421 Arch Street, Philadelphia"
+    },
+    {
+      "geometry" : {
+        "location" : {
+          "lat" : 39.9519372,
+          "lng" : -75.1684106
+        },
+        "viewport" : {
+          "northeast" : {
+            "lat" : 39.9532861802915,
+            "lng" : -75.16706161970851
+          },
+          "southwest" : {
+            "lat" : 39.9505882197085,
+            "lng" : -75.16975958029151
+          }
+        }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+      "id" : "a061162510818d4fa914e7f549e013bb438e94ac",
+      "name" : "The Westin Philadelphia",
+      "opening_hours" : {
+        "open_now" : true,
+        "weekday_text" : []
+      },
+      "photos" : [
+        {
+          "height" : 2742,
+          "html_attributions" : [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/105705515475813455601/photos\"\u003eThe Westin Philadelphia\u003c/a\u003e"
+          ],
+          "photo_reference" : "CmRaAAAAI2-evWViGLU6QJ5mMcSbBg561--uPrX8L_c1LCy9CUrDltJw1BD7rYGLAgnvWsgIGgxdLXPJR0dPgIyeMDeLQJuyD6nNaO4y1eouyGTrFs9Kpopmbsq_7QpBNTBe9gzHEhCTY-KTW5P1RuCh2YAW1gE4GhQQfDOeBsAWMfe5hxAkq7FNHTNCFg",
+          "width" : 3840
+        }
+      ],
+      "place_id" : "ChIJ6_1xXDDGxokRIQqqKZGjCNg",
+      "price_level" : 3,
+      "rating" : 4.2,
+      "reference" : "CmRSAAAA0OuqDFrw_D2z6KBZSecQQiFp_ViKySWlSLJl_YPageRI851m-CNkeSAzFi4TuzvCuX0HC2_G5kXC-MwHoWKhzKUmUq0gK8namFZyGmrw3eHP4h_sdixFdve-nmSiE9kwEhBoOVnECqp5dF22NU4eUPOwGhTSdXeWXUfRNRXsFT0F-E4RBHTZDA",
+      "scope" : "GOOGLE",
+      "types" : [ "lodging", "restaurant", "food", "point_of_interest", "establishment" ],
+      "vicinity" : "99 South 17th Street at Liberty Place, Philadelphia"
+    },
+    {
+      "geometry" : {
+        "location" : {
+          "lat" : 39.95301,
+          "lng" : -75.161804
+        },
+        "viewport" : {
+          "northeast" : {
+            "lat" : 39.9544584302915,
+            "lng" : -75.16074671970848
+          },
+          "southwest" : {
+            "lat" : 39.9517604697085,
+            "lng" : -75.16344468029151
+          }
+        }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+      "id" : "bbb3fabb9a4b42b07ce2771e2bad64e327fd5b68",
+      "name" : "Courtyard by Marriott Philadelphia Downtown",
+      "opening_hours" : {
+        "open_now" : true,
+        "weekday_text" : []
+      },
+      "photos" : [
+        {
+          "height" : 720,
+          "html_attributions" : [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/114199015026172908274/photos\"\u003eCourtyard by Marriott Philadelphia Downtown\u003c/a\u003e"
+          ],
+          "photo_reference" : "CmRaAAAAseB5c-OdftwdCZgwgutULdXBusNuAPrAeGMvFuEiiAlp5K8N3v3zp7xnV7N-r4xgfb25BMSVYvS45DZwPpfOq8LFBPMDkcqEdNGCGjVpmOFQlGdAC6nNedRENfHGvk6XEhC-96V3HokUjbHGYUFJdDobGhSGtxtRM678VD67MaiQJG0goFZgvA",
+          "width" : 433
+        }
+      ],
+      "place_id" : "ChIJkWOsky7GxokRRVwy9AGBEDU",
+      "rating" : 4.3,
+      "reference" : "CmRRAAAAvHKUojAM7IHPtVJLx9nLQReRCBHtxqrQoxBrcnjnFQf0_itFapHWNxS87nAawQZINC8rqAaEFkOZJNvPhaiWQuBoRryEKkoJLaEfM5RaB-2OiIT2wS92B9kQJW7DkxGaEhB39XPkwfgvzNtSTR9drZxyGhTk09kC9DlbgSp0fk89R62_R0P4Ow",
+      "scope" : "GOOGLE",
+      "types" : [ "lodging", "point_of_interest", "establishment" ],
+      "vicinity" : "21 North Juniper Street, Philadelphia"
+    },
+    {
+      "geometry" : {
+        "location" : {
+          "lat" : 39.9513214,
+          "lng" : -75.16839259999999
+        },
+        "viewport" : {
+          "northeast" : {
+            "lat" : 39.95271503029149,
+            "lng" : -75.16703411970849
+          },
+          "southwest" : {
+            "lat" : 39.95001706970849,
+            "lng" : -75.1697320802915
+          }
+        }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+      "id" : "e70044f7441208cc2daba8aee69d598f1f4d6ae4",
+      "name" : "Club Quarters Hotel, Philadelphia",
+      "opening_hours" : {
+        "open_now" : true,
+        "weekday_text" : []
+      },
+      "photos" : [
+        {
+          "height" : 5792,
+          "html_attributions" : [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/106194998780859366357/photos\"\u003eClub Quarters Hotel, Philadelphia\u003c/a\u003e"
+          ],
+          "photo_reference" : "CmRaAAAAr1YhzX1Hi3S76kDxpOxMUU4YmkaKmz4kCzWWR_AJbyqqIWED1wUoO2JQ6WxAmX7DY5Jz5wyZou5rORG3lmjQN_L7WqTA2pHK7pROR-W235STuewolXXkuV6SWdeLwsocEhDIl8UWSk8AIq6VsOKSlgtLGhRdfdkj84SvLQpu53E3F9D-BxKzcA",
+          "width" : 8688
+        }
+      ],
+      "place_id" : "ChIJUXdDXDDGxokR9rLmamBhX88",
+      "rating" : 3.9,
+      "reference" : "CmRSAAAAZ1rwt4x4Cu_eCpZP5UXpt54kK7XrIgKo-G8oRQ5YAyUK1IgnQ7jqTx4LFIOh-0-j4ZJ5KWfLBFU1gjw5FXKuneixS6OSm8tMXfnN671Oe_0Y_hqdzkAvCAMjaHGU3izHEhDQNf_F9GDJ8G9vk-iW1Z3KGhQEJLPt8QEnXdLSn7ZYK4H7vkEBPA",
+      "scope" : "GOOGLE",
+      "types" : [ "lodging", "point_of_interest", "establishment" ],
+      "vicinity" : "1628 Chestnut Street, Philadelphia"
+    },
+    {
+      "geometry" : {
+        "location" : {
+          "lat" : 39.9508021,
+          "lng" : -75.1686555
+        },
+        "viewport" : {
+          "northeast" : {
+            "lat" : 39.9521671802915,
+            "lng" : -75.16743646970849
+          },
+          "southwest" : {
+            "lat" : 39.9494692197085,
+            "lng" : -75.17013443029151
+          }
+        }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+      "id" : "ab9c08f12000cbb9afdec86679aedb0ddcceb31f",
+      "name" : "Kimpton Hotel Palomar Philadelphia",
+      "opening_hours" : {
+        "open_now" : true,
+        "weekday_text" : []
+      },
+      "photos" : [
+        {
+          "height" : 5312,
+          "html_attributions" : [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/101620785848216994734/photos\"\u003eVictoria Pettit\u003c/a\u003e"
+          ],
+          "photo_reference" : "CmRaAAAAz_F94N7yRRPTByDNa0iR8-WBkjCc4lRUPeTiYtEhsTkXSZ_ezxK-F-fQ3Ff_xmuWXbYBlaUIVxroH7Xc-nOhtEeYhCl2VHzON9HQn9aN7C-LbedUOgLU2EgOF-JMC6GIEhArCCSL_CI-_CVKu8cu8_0HGhSGSDgf-jCgDT-8LAP8giZdd2R8MQ",
+          "width" : 2988
+        }
+      ],
+      "place_id" : "ChIJD55aYTDGxokRuW1PyOVzdxQ",
+      "price_level" : 3,
+      "rating" : 4.5,
+      "reference" : "CmRRAAAA3M3ipY9TpOBKkqkpj9pPS88JNQOtwGHcpWpgMWGmGC0KBflvkJI2YKIF-4iGiJvuSiFeu-opg2mxcHCU9wq-vmLTHfihMeVpwNZupHWhW7G_ZZ8JpFFeWoUyeo3Lami9EhCoNe9GdVBpWcW_iltIe7iaGhQ_7GdZTmbz7_oJxnkQ2ZLWD9a-PA",
+      "scope" : "GOOGLE",
+      "types" : [ "lodging", "point_of_interest", "establishment" ],
+      "vicinity" : "117 South 17th Street, Philadelphia"
+    },
+    {
+      "geometry" : {
+        "location" : {
+          "lat" : 39.952575,
+          "lng" : -75.160527
+        },
+        "viewport" : {
+          "northeast" : {
+            "lat" : 39.9537749302915,
+            "lng" : -75.15925821970849
+          },
+          "southwest" : {
+            "lat" : 39.9510769697085,
+            "lng" : -75.1619561802915
+          }
+        }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+      "id" : "e97b2778767ecae89bd9896cecfeb17e7860d5fe",
+      "name" : "Philadelphia Marriott Downtown",
+      "opening_hours" : {
+        "open_now" : true,
+        "weekday_text" : []
+      },
+      "photos" : [
+        {
+          "height" : 1536,
+          "html_attributions" : [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/117543041295199128627/photos\"\u003eHouAndLee LiHueiAndWenYu\u003c/a\u003e"
+          ],
+          "photo_reference" : "CmRaAAAAiYweaOQtmUN22I9jpz023VQgwLyFQX7BB3XoMqULzeP4-OuX_PPk1gPtDEVF9qgWep56TVqxO3862UFGGXbsbl9MFnoJk5GZNsZ5YpH1CepHWHhcuX7jGEKbxkgHViefEhC1ba_-nJYiN50dH2vaJhxqGhTOigEHU8v8b1nNv2r8XDoapQdKyQ",
+          "width" : 2048
+        }
+      ],
+      "place_id" : "ChIJOx8izC7GxokRPvOWsXcBRXs",
+      "price_level" : 3,
+      "rating" : 4.2,
+      "reference" : "CmRRAAAA7zBcQjDJkOmnD1jmtpVOq-CeE-i8BQgufQRjWMvKmn64_BAzOhB-YdRecLQQemDtNBtKsUfvkJgC-AcWt1c5_7BDhqF0im1KAjzwXTBCK9n7wV7XRe1ARXOBJX7ZGj2bEhAJey0VeJ4T-sX3IrFx6K7gGhSzufLbHbHucpTTYVn673O18X2YhA",
+      "scope" : "GOOGLE",
+      "types" : [ "lodging", "restaurant", "food", "point_of_interest", "establishment" ],
+      "vicinity" : "1201 Market Street, Philadelphia"
+    },
+    {
+      "geometry" : {
+        "location" : {
+          "lat" : 39.950909,
+          "lng" : -75.169482
+        },
+        "viewport" : {
+          "northeast" : {
+            "lat" : 39.9522228302915,
+            "lng" : -75.1678492697085
+          },
+          "southwest" : {
+            "lat" : 39.9495248697085,
+            "lng" : -75.1705472302915
+          }
+        }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+      "id" : "664a15948468227fe870100f6c5026ad2759f294",
+      "name" : "Hotel Sofitel Philadelphia",
+      "opening_hours" : {
+        "open_now" : true,
+        "weekday_text" : []
+      },
+      "photos" : [
+        {
+          "height" : 768,
+          "html_attributions" : [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/114227411825662988006/photos\"\u003eHotel Sofitel Philadelphia\u003c/a\u003e"
+          ],
+          "photo_reference" : "CmRaAAAAfQChc2ZUiU5OEzM2bLvqEetIB3AQz90iibz6YxSWlI7fyOmhiOKiEpErQcgdeqGCUHDr0ujne6RDHJ4tlKcgWD3j-UfBCMTuHVpFr4c7UA07JMBpexL2RUF1g9THDwfUEhCp4fEb3t_0QOGbmZ8fLJP1GhQdZP_Cnq9phHkpSzTdv90hSlaQWw",
+          "width" : 1024
+        }
+      ],
+      "place_id" : "ChIJrQbSYzDGxokR2TCy3fjNWoQ",
+      "price_level" : 3,
+      "rating" : 4.5,
+      "reference" : "CmRSAAAA6QwRcuQ1fIFigBUyKt9Ypg6gnhCYTWtiRqMFr_cl_P-27r2eQsbE4_pWRM46_LgUnIvzFnZ-qE6q-DHpCpzp2vSSWu__hU0i8Y9jnxXdwfFZDP6mX73FWfWshfCpwr_MEhCtnsBNVYauwZcbftzPQPyDGhRiDXuU2XsUvoM1oV4U68ruuRioZg",
+      "scope" : "GOOGLE",
+      "types" : [ "lodging", "restaurant", "food", "point_of_interest", "establishment" ],
+      "vicinity" : "120 South 17th Street, Philadelphia"
+    },
+    {
+      "geometry" : {
+        "location" : {
+          "lat" : 39.955715,
+          "lng" : -75.16802980000001
+        },
+        "viewport" : {
+          "northeast" : {
+            "lat" : 39.9571324302915,
+            "lng" : -75.1665914197085
+          },
+          "southwest" : {
+            "lat" : 39.9544344697085,
+            "lng" : -75.16928938029152
+          }
+        }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+      "id" : "c5f18f4d1ce1b4d9d49e03ed5662147d9d871120",
+      "name" : "The Windsor Suites",
+      "opening_hours" : {
+        "open_now" : true,
+        "weekday_text" : []
+      },
+      "photos" : [
+        {
+          "height" : 433,
+          "html_attributions" : [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/101020740295758799862/photos\"\u003eThe Windsor Suites\u003c/a\u003e"
+          ],
+          "photo_reference" : "CmRaAAAAMRDqvwIBrA5pR-iExBAJFP-65PFDRnw7Gk6W0UMZo49paK8QSD0N46IvRRol7RHXcvVKf2wZUR_tXOn3qu03D5oS1HjPmnXog-kA3oOEDV6vPAGqvsVEheu5al_StOSqEhAzHhPde1Le-1BTwmpNVNotGhSGQFgVSShkLaYxYgMF1ISX6lXrtg",
+          "width" : 650
+        }
+      ],
+      "place_id" : "ChIJdVCkPzLGxokRZYFGa7RAGlc",
+      "rating" : 4.3,
+      "reference" : "CmRRAAAAvB8wXsYfhqEyClsbn1wn_1Q9YfMUu6-ldQcRgfb_meQDSBxC02rUok5tEYbJzN2u4ZlO9w_Vd5tqhYXFf9LVlBzVqCH1PRBpEw0VGE4cflvgwG04R3NwOW41v3JUBV7mEhBKpPcueKf5gwAdZaNSe8WEGhSd55S6CDKjtdcoHHc8sc2SIIE-Og",
+      "scope" : "GOOGLE",
+      "types" : [ "lodging", "point_of_interest", "establishment" ],
+      "vicinity" : "1700 Benjamin Franklin Parkway, Philadelphia"
+    },
+    {
+      "geometry" : {
+        "location" : {
+          "lat" : 39.9518154,
+          "lng" : -75.16033949999999
+        },
+        "viewport" : {
+          "northeast" : {
+            "lat" : 39.9532350302915,
+            "lng" : -75.15892456970849
+          },
+          "southwest" : {
+            "lat" : 39.9505370697085,
+            "lng" : -75.1616225302915
+          }
+        }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+      "id" : "263a6982cfd046180991a33e2bf96eae38fa68dd",
+      "name" : "Loews Philadelphia Hotel",
+      "opening_hours" : {
+        "open_now" : true,
+        "weekday_text" : []
+      },
+      "photos" : [
+        {
+          "height" : 2700,
+          "html_attributions" : [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/111105514513926266494/photos\"\u003eLoews Philadelphia Hotel\u003c/a\u003e"
+          ],
+          "photo_reference" : "CmRaAAAA35hw61PKoMDypYoII3emNaCm8Y57Khapr6eV7OlYstIK5fAuvR5rL9D91aqeODNvYNdfyIeheOGM9NaIcb2YYEfdxpSgV1zNLm7JunZTQhBXbc1_XU7WgFp7Aa1owxGgEhBCqYbVGruFtI5byvti-pplGhQ8cJ8zLHmL88c13fGy3uufifsv4w",
+          "width" : 5120
+        }
+      ],
+      "place_id" : "ChIJ6bNuLSnGxokR29Oj-g9Tojo",
+      "rating" : 4.4,
+      "reference" : "CmRRAAAAQqnWt-5dFv9jnW9CG6f0AG-HZ23FA1CJ79OCL7Neyljq7GeVqlyc8yJd2sktnQDwb92VZyH3zyAGaecGP48pa2DBATUx40U0KMb6yIlnsd_TbpHbbhqnvUq_lbjvkq6JEhBjXeJApVaM5rfv-HkzZxCfGhR106P7-BpFQn4gWTVMt7njY7lVzQ",
+      "scope" : "GOOGLE",
+      "types" : [ "lodging", "point_of_interest", "establishment" ],
+      "vicinity" : "1200 Market Street, Philadelphia"
+    },
+    {
+      "geometry" : {
+        "location" : {
+          "lat" : 39.9492816,
+          "lng" : -75.1625574
+        },
+        "viewport" : {
+          "northeast" : {
+            "lat" : 39.9505627802915,
+            "lng" : -75.16122276970849
+          },
+          "southwest" : {
+            "lat" : 39.94786481970851,
+            "lng" : -75.16392073029149
+          }
+        }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+      "id" : "f3b2f96d656354e8e9dbc2f931e2025c95e1eadb",
+      "name" : "Holiday Inn Express Philadelphia-Midtown",
+      "opening_hours" : {
+        "open_now" : true,
+        "weekday_text" : []
+      },
+      "photos" : [
+        {
+          "height" : 3024,
+          "html_attributions" : [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/117200119672293906569/photos\"\u003ebalzi rock\u003c/a\u003e"
+          ],
+          "photo_reference" : "CmRaAAAAy0V8CF1-7z7nBaQmtxuI_mWRKzCV4k76Vfg74JYrOlv5-G3jJFYTEo0zedz95xMjXysIX-8myu1XGKlSAWaBnM2RIzm41T2rXA_9ljwnnvzMJVxZ8UD0ZPREGLYUwedmEhCtvqmmZrisydd9regAd-fcGhSCLlvlxdwp9DKZ7UzS3HpFQhK0Hg",
+          "width" : 4032
+        }
+      ],
+      "place_id" : "ChIJj7NcYi_GxokRN-XxX1zeGsQ",
+      "rating" : 4,
+      "reference" : "CmRSAAAAiSJKhm3Ddq2ok-bgU9z24DPb2nYk6NJLnQ_2RJ7DfrZ1JNL10Kf79NwRi-Fz5HmEiLEBHOiTGLhTlOf4iNaUDeHJbRxVO4p6DWNbj0pmjsjl5m6PY-Sr0xmaK2r238J8EhAbAO7lpoig6a7pxiTCI9QsGhQeaYFmUoqXdkqmgnUn_Lvhz-HdjA",
+      "scope" : "GOOGLE",
+      "types" : [ "lodging", "point_of_interest", "establishment" ],
+      "vicinity" : "1305 Walnut Street, Philadelphia"
+    },
+    {
+      "geometry" : {
+        "location" : {
+          "lat" : 39.9528337,
+          "lng" : -75.1703455
+        },
+        "viewport" : {
+          "northeast" : {
+            "lat" : 39.9543914802915,
+            "lng" : -75.16907871970849
+          },
+          "southwest" : {
+            "lat" : 39.9516935197085,
+            "lng" : -75.1717766802915
+          }
+        }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+      "id" : "9c73529eb70d31e7e27fba0efadfb0bb477eba14",
+      "name" : "Sonesta Philadelphia Downtown Rittenhouse Square",
+      "photos" : [
+        {
+          "height" : 2250,
+          "html_attributions" : [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/117190836313501281895/photos\"\u003eSonesta Philadelphia Downtown Rittenhouse Square\u003c/a\u003e"
+          ],
+          "photo_reference" : "CmRaAAAA9WP5iXSrEUkUVrB2pMRQkR4wzqDk7RBzWq_lpyeYO_RK7eHvFMpuJCJSHFNo4pQCEzR-WAuLX4om425OulGkO88_Av7-qGrcB8itgpIobfIzX32ApBCUiF-sv8D3x2SCEhCeCiFyPJZrw7xxhzHLLsi8GhT_bCKtmPaJq5eQvYaThc2DRIpJrw",
+          "width" : 3000
+        }
+      ],
+      "place_id" : "ChIJS-B6GTHGxokRtXWy8SVZiM4",
+      "rating" : 4.2,
+      "reference" : "CmRSAAAARA_15Qdg9tqb3BvQq_EV_c7s8m-4uALmSy0jZ40M5dUm0mSOpIakkHEqG50JXHtKlAXV5afvPb_WR_UoHQBOIMvSGPjTwunQgD8O29XiV82tdyM8UxUaM8v9dZ7VvRZvEhAWcVAcB0hhli_diOSO5pZPGhTsHmh79TTIo9emTm5Vz1Q7Nk8RcA",
+      "scope" : "GOOGLE",
+      "types" : [ "lodging", "point_of_interest", "establishment" ],
+      "vicinity" : "1800 Market Street, Philadelphia"
+    },
+    {
+      "geometry" : {
+        "location" : {
+          "lat" : 39.9504244,
+          "lng" : -75.1704321
+        },
+        "viewport" : {
+          "northeast" : {
+            "lat" : 39.9517845302915,
+            "lng" : -75.16917571970849
+          },
+          "southwest" : {
+            "lat" : 39.94908656970851,
+            "lng" : -75.17187368029151
+          }
+        }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+      "id" : "fbf62c6fc01b26715c937b66f3238ad593a6b22c",
+      "name" : "AKA Rittenhouse Square",
+      "opening_hours" : {
+        "open_now" : true,
+        "weekday_text" : []
+      },
+      "photos" : [
+        {
+          "height" : 2048,
+          "html_attributions" : [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/101232130737481900191/photos\"\u003eAKA Rittenhouse Square\u003c/a\u003e"
+          ],
+          "photo_reference" : "CmRaAAAAXqanTR_ulnub0u_vrf9iAecI4Oji0kJBaJRMiAEa07mv9lTlyVmj0UpRF37mygBpZfmUPmVO4igc8PqSTXU9snzmzklmzlBWfMVPoQtwDiEwosbscHEPbP34Jz6_vI9NEhCFXpwPdv7ltonyMt-sRDB6GhQ2Cq5mCQnti-7ohodg5sTinuV6JQ",
+          "width" : 1536
+        }
+      ],
+      "place_id" : "ChIJmd9gnzDGxokRDQ0SjqkD9BA",
+      "price_level" : 3,
+      "rating" : 4.7,
+      "reference" : "CmRRAAAA_n7JyjrdzsDLRsJhKOkD8tin8ZCw-hjy-C1bmlA456aW1OLoIw5jMaZfErkRmyomCut0ExpIrWXfZZQiyEN_il1yQpifDj_NbaylFqONvce4Dzq7RoSChUWIBF1I4V6VEhCWmmbN3NWjEhnRHEhEekErGhRv27HmxR7GBtht-XYI9mvFjSFIfg",
+      "scope" : "GOOGLE",
+      "types" : [ "lodging", "point_of_interest", "establishment" ],
+      "vicinity" : "135 South 18th Street, Philadelphia"
+    },
+    {
+      "geometry" : {
+        "location" : {
+          "lat" : 39.947898,
+          "lng" : -75.16408799999999
+        },
+        "viewport" : {
+          "northeast" : {
+            "lat" : 39.9492939302915,
+            "lng" : -75.16294001970849
+          },
+          "southwest" : {
+            "lat" : 39.9465959697085,
+            "lng" : -75.16563798029149
+          }
+        }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+      "id" : "d570d6b741c61bd217e348c3a61ea5b85ce31d5a",
+      "name" : "DoubleTree by Hilton Hotel Philadelphia Center City",
+      "opening_hours" : {
+        "open_now" : true,
+        "weekday_text" : []
+      },
+      "photos" : [
+        {
+          "height" : 2878,
+          "html_attributions" : [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/103065607093709150440/photos\"\u003eDoubleTree by Hilton Hotel Philadelphia Center City\u003c/a\u003e"
+          ],
+          "photo_reference" : "CmRaAAAAa0Cerx_hWRvNdRnzMk8qRTktnwa8LTzWfeGOx_k_ZHZrsvQu6KlV_2dlhLjc4idcTZFuF7P5_pzqRWQ9Hn0aoPKOA1MaBifAb0hDeMOiP-HvFXf5jnejECY2wlKW5yWmEhDXb2IZ5TYkbkRL-sNHBwlWGhT8h7H4mjNGDzKN44SIyZi5xQm2_w",
+          "width" : 2871
+        }
+      ],
+      "place_id" : "ChIJQ433EiXGxokRnWqMZZoUCDo",
+      "rating" : 4.1,
+      "reference" : "CmRRAAAAEcOw3SFv2chspvLR4B4tcbzjSo3ykwq6NicYq3GFiWe3EWEWvVC0-J_Z40Cm8Tvy3QDjDSvK1s8PXO352TJgILur4LaR1h7t3Dcm9i2tC5FuyWkVgnEfT5SlPMNQEbaBEhCJ5EfBHXlVGW5syq4e7mFmGhQKQU14gSqpMuHN3KrE-Zl4yGfU9Q",
+      "scope" : "GOOGLE",
+      "types" : [ "lodging", "point_of_interest", "establishment" ],
+      "vicinity" : "237 South Broad Street, Philadelphia"
+    },
+    {
+      "geometry" : {
+        "location" : {
+          "lat" : 39.95644449999999,
+          "lng" : -75.16917099999999
+        },
+        "viewport" : {
+          "northeast" : {
+            "lat" : 39.95788868029149,
+            "lng" : -75.16770356970849
+          },
+          "southwest" : {
+            "lat" : 39.95519071970849,
+            "lng" : -75.1704015302915
+          }
+        }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+      "id" : "0369a30aedcbfaa852a4bd0d146f1bea8c19bbd8",
+      "name" : "Embassy Suites Philadelphia Center City",
+      "opening_hours" : {
+        "open_now" : true,
+        "weekday_text" : []
+      },
+      "photos" : [
+        {
+          "height" : 3000,
+          "html_attributions" : [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/105638421327255093748/photos\"\u003eEmbassy Suites Philadelphia Center City\u003c/a\u003e"
+          ],
+          "photo_reference" : "CmRaAAAAGKZowEJxB1c8qi9_KZv5peulFjOgLvMzXXP3dbSEMMjikjNSGNHSnZLZ5XYGUxHAnhblvaXhmQFhA0J1GPtHUBE1Wuh0SrPlDo4ofLYOrZ01x-WgV2Hl-GLmaHU-iz_UEhBcVaW6P8fyt_-Rsfxl2R0SGhSU0RFsai7EbY476DBcU5yHEVT2Vw",
+          "width" : 4390
+        }
+      ],
+      "place_id" : "ChIJh-01STLGxokR1quHKykdEYE",
+      "rating" : 3.9,
+      "reference" : "CmRSAAAAVsihiBqHa-fvZCONZNo8X2Fyi1l1UmBpVjF6rQCqasbTRmGjs7d6P8gUa8Z3YSkEL-V8zyLkGjr-S4tlZd1jtRg46ZsxcmuQGNUmHpLz_5yFrTOy1DkPbqJWZylBuBT_EhDIAj1PhXim-bdGVlc7Y2ydGhSGnEulhzTVeHQ_ngXUSnsbXCAS7A",
+      "scope" : "GOOGLE",
+      "types" : [ "lodging", "point_of_interest", "establishment" ],
+      "vicinity" : "1776 Benjamin Franklin Parkway, Philadelphia"
+    },
+    {
+      "geometry" : {
+        "location" : {
+          "lat" : 39.94880200000001,
+          "lng" : -75.161061
+        },
+        "viewport" : {
+          "northeast" : {
+            "lat" : 39.9502262802915,
+            "lng" : -75.1596961697085
+          },
+          "southwest" : {
+            "lat" : 39.9475283197085,
+            "lng" : -75.1623941302915
+          }
+        }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+      "id" : "39899384348d9351de1ee1e5d259e20455a4860b",
+      "name" : "Rodeway Inn Center City",
+      "opening_hours" : {
+        "open_now" : true,
+        "weekday_text" : []
+      },
+      "photos" : [
+        {
+          "height" : 1080,
+          "html_attributions" : [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/105327939830988631899/photos\"\u003eRodeway Inn Center City\u003c/a\u003e"
+          ],
+          "photo_reference" : "CmRaAAAA40qcphFvCnGzA2eKKjsxaxfdE8JfEssGzYbQPKkOo9SkJwSebSRB6DW_lZWWDp1kl70_ULc6DtZyxAQEB9Z_odAr4Knww7V1tPd_8SA-TOLFLOTiAxF7kGwsRaSw8n3ZEhDv55_c2iJD9dRG2aJPREHFGhT_yQ5NL1NvNpojj_LZj0dyoIPDzg",
+          "width" : 1350
+        }
+      ],
+      "place_id" : "ChIJPRoD-CXGxokR3XOibY2ErZc",
+      "rating" : 3.3,
+      "reference" : "CmRSAAAA-wZHY5PiuOIEjpstP_HBmIB0r1BrY9hsykgRbsbgYeCzPmbypsu0eLhBkheKhMdTqV--qsLlr0zUrqZ0LSYtYx2Ix1WR13KES3uXBksukd2Yfgynzui7Jc6ay2GSFksIEhDM4DegWt4xoyqIU_yeILiBGhR64M-3lMKBcWVFLEOHpAsRZUmSaQ",
+      "scope" : "GOOGLE",
+      "types" : [ "lodging", "point_of_interest", "establishment" ],
+      "vicinity" : "1208 Walnut Street, Philadelphia"
+    },
+    {
+      "geometry" : {
+        "location" : {
+          "lat" : 39.95627100000001,
+          "lng" : -75.160735
+        },
+        "viewport" : {
+          "northeast" : {
+            "lat" : 39.9574849302915,
+            "lng" : -75.15941651970849
+          },
+          "southwest" : {
+            "lat" : 39.95478696970851,
+            "lng" : -75.16211448029149
+          }
+        }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+      "id" : "b30f591b7d404299eba45064677603e3c11de1f5",
+      "name" : "Hampton Inn Philadelphia City Center - Convention Center",
+      "opening_hours" : {
+        "open_now" : true,
+        "weekday_text" : []
+      },
+      "photos" : [
+        {
+          "height" : 649,
+          "html_attributions" : [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/104073905032070695180/photos\"\u003eHampton Inn Philadelphia City Center - Convention Center\u003c/a\u003e"
+          ],
+          "photo_reference" : "CmRaAAAA3YWEUxtby76ngXbU_gZYVu1-gpL8Zs7jGCmiMUx_6dgy76y1PcZ3RFB6K-b5McYTkldvxToW0y8bUr3WISNhLjZQfJ3q7B244ij9x3OA4WgKQIDjVbIL251WU_j0y4jYEhAr1kKHHLZBiEOEXhQraHYvGhR69leaMAiL3JP5RVCddVh75shxpg",
+          "width" : 431
+        }
+      ],
+      "place_id" : "ChIJcyi5fSzGxokRE4Z2-OK6ogE",
+      "rating" : 4.1,
+      "reference" : "CmRRAAAA6m1y9Z_4ne5K84JdQw2flWJ8eJX7Vd35NhOqd3eUC8eJ7YA55TV_iPiDwLfjd6Tx6ALDVoST_z9g58dmvU-L7cw4JIIvIon-mqChp5fZaljvyYpS0p_mhDos2kTXiMPeEhAqTy8wF3OIbKg_31Q6x-UpGhTkYb1EXbFw0Xx-x9To5YAfcVghYA",
+      "scope" : "GOOGLE",
+      "types" : [ "lodging", "point_of_interest", "establishment" ],
+      "vicinity" : "1301 Race Street, Philadelphia"
+    },
+    {
+      "geometry" : {
+        "location" : {
+          "lat" : 39.9477815,
+          "lng" : -75.16214599999999
+        },
+        "viewport" : {
+          "northeast" : {
+            "lat" : 39.9491930802915,
+            "lng" : -75.1607746197085
+          },
+          "southwest" : {
+            "lat" : 39.9464951197085,
+            "lng" : -75.16347258029151
+          }
+        }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+      "id" : "f73653aaa6d5f21f12ab7f2e1ffdc821ec0c1e67",
+      "name" : "The Independent Hotel",
+      "opening_hours" : {
+        "open_now" : true,
+        "weekday_text" : []
+      },
+      "photos" : [
+        {
+          "height" : 530,
+          "html_attributions" : [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/111661743693085038958/photos\"\u003eThe Independent Hotel\u003c/a\u003e"
+          ],
+          "photo_reference" : "CmRaAAAAYWGVD4JaK_ePfVh6Gq8W9HCwW_rboCER_NheZCuSamj7nG_sYm7IBV22Dv-lpNaTACZ02_T1-bNZjhXYKmEQRDMmZN3doNkOVMmbNKyAPGcy9cVoautbi6LSSDMtYbAwEhDTI8FRezqVuA3A2ugSFjLuGhSQzHXJt-nOFhxCZpUsFoqbG6tGZg",
+          "width" : 800
+        }
+      ],
+      "place_id" : "ChIJKeLXlSXGxokRbEpHFXP99DQ",
+      "rating" : 4.2,
+      "reference" : "CmRRAAAAh9wcAlCkMhHP5Ra4YlUNhkvm9o0VMsnhARYMniDT7uSvcVqUdvFNBWehPPG5Rry7ntUgU4CepQtypbLVtgM56pC4sPXypvwhema3YhoyIwx5adiWNA5wjMaK-byZCMnNEhCS0JdG4h_nzgpSNzeSA9b-GhSlxr8i04Pvpn5um9JBB1DICEC_pA",
+      "scope" : "GOOGLE",
+      "types" : [ "lodging", "point_of_interest", "establishment" ],
+      "vicinity" : "1234 Locust Street, Philadelphia"
+    },
+    {
+      "geometry" : {
+        "location" : {
+          "lat" : 39.9533763,
+          "lng" : -75.15808059999999
+        },
+        "viewport" : {
+          "northeast" : {
+            "lat" : 39.9549221802915,
+            "lng" : -75.1566935197085
+          },
+          "southwest" : {
+            "lat" : 39.9522242197085,
+            "lng" : -75.1593914802915
+          }
+        }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+      "id" : "d16cc4ee2650796e7fc61ab0e8c07561bb1d88f9",
+      "name" : "Hilton Garden Inn Philadelphia Center City",
+      "opening_hours" : {
+        "open_now" : true,
+        "weekday_text" : []
+      },
+      "photos" : [
+        {
+          "height" : 2048,
+          "html_attributions" : [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/116945317079119570722/photos\"\u003eHilton Garden Inn Philadelphia Center City\u003c/a\u003e"
+          ],
+          "photo_reference" : "CmRaAAAA8bhnK1qqot8T2xRAVwHpLxxcptXPNymsrs1wpUC5VLe7YjmL7yMxiV3-5eC5ciVHAkBhVKkMDDIDOfD-sE8u4QBXOFVXdkr1FoxouFZGvy_Bl9iXg-IhREghjhzgOkgZEhANCuHGvygz4ysaE0BgJsN2GhSmk4bRaqeB2IsONFwLpi7hRHkXxg",
+          "width" : 1357
+        }
+      ],
+      "place_id" : "ChIJHwSh1yvGxokRL_J16w-5wmw",
+      "rating" : 3.9,
+      "reference" : "CmRRAAAAr5fQY6E-08jg2VSA2opLoAm1saW1Ncae6ATNguty0uRqT5Iz31AtI7L1xPU4tFwnVn-__95JJ4cL3aX06jVMdM9PbqbyDml_NykVbS4jJQ4-uwCPTVz1bClJsm3Pyv67EhDBOO3KBk9V3-cxZ1wkF5PVGhQw39Aeao6p9R9xYDKtI_JL7b3naA",
+      "scope" : "GOOGLE",
+      "types" : [ "lodging", "point_of_interest", "establishment" ],
+      "vicinity" : "1100 Arch Street, Philadelphia"
+    }
+  ],
+  "status" : "OK"
+}

@@ -48,7 +48,8 @@
             android:value="@integer/google_play_services_version" />
 
         <activity android:name=".ConfirmHotelActivity" />
-        <activity android:name=".PlacePickerActivity"></activity>
+        <activity android:name=".PlacePickerActivity" />
+        <activity android:name=".ConfirmHotelListActivity"></activity>
     </application>
 
 </manifest>
