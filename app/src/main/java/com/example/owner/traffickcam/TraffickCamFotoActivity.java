@@ -63,18 +63,22 @@ import static io.fotoapparat.result.transformer.SizeTransformers.scaled;
 
 public class TraffickCamFotoActivity extends AppCompatActivity {
 
-    private final PermissionsDelegate permissionsDelegate = new PermissionsDelegate(this);
-    private boolean hasCameraPermission;
-    private CameraView cameraView;
+    private final PermissionsDelegate permissionsDelegate = new PermissionsDelegate(this); //gets permissions
+    private boolean hasCameraPermission; // whether or not user has granted permissions
+    private CameraView cameraView; // camera view -- how the user sees what the camera sees
+    private FotoapparatSwitcher fotoapparatSwitcher; // switches between front and back camera
+    private Fotoapparat fotoapparat; // open source camera
 
-    private FotoapparatSwitcher fotoapparatSwitcher;
-    private Fotoapparat fotoapparat;
-
+    /*
+     *  List<String> s contains a list of things the user will be told to take pictures of.
+     *  If you wish to change the list of things the user should be taking pictures of,
+     *  feel free to change the list here.
+     */
     protected List<String> s = Arrays.asList(
             "window", "bed", "TV", "bathroom"
     );
-    protected ListIterator<String> subjects;
-    protected String currentSubject;
+    protected ListIterator<String> subjects; // iterates List s -- use this to go through subjects
+    protected String currentSubject; // holds a copy of the current subject
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -101,20 +105,61 @@ public class TraffickCamFotoActivity extends AppCompatActivity {
         printText();
     }
 
+    // Uses Toast to tell the user what to take a picture of
+    // TODO -- find an alternative to Toast because Toast sucks
     protected void printText()
     {
-        //  TODO
-        //  Toast is temporary...  Should eventually change to drawing on the screen
-        //  or text box
-        //  Toast disappears after a few seconds...  We want the text to be there
-        //  until a specified period of time
         currentSubject = subjects.next();
         Toast.makeText(this, getString(R.string.take_pic_message) + " " + currentSubject + ".", Toast.LENGTH_LONG).show();
     }
 
+    // Uses Toast to print String test
+    // good for debugging
     protected void printText(String text)
     {
         Toast.makeText(this, text, Toast.LENGTH_LONG).show();
+    }
+
+    public void takePictureOnClick(View view)
+    {
+        PhotoResult photoResult = fotoapparat.takePicture(); // takes photo
+        savePicture(photoResult); // saves photo
+
+        // When the photo is available,
+        // if there are more subjects to take pictures of, the app will tell the user to do so
+        // else, the next activity is triggered
+        photoResult
+                .toBitmap()
+                .whenAvailable(new PendingResult.Callback<BitmapPhoto>() {
+                    @Override
+                    public void onResult(BitmapPhoto result) {
+                        if(subjects.hasNext()) printText();
+                        /**
+                         ImageView imageView = (ImageView) findViewById(R.id.result);
+
+                         imageView.setImageBitmap(result.bitmap);
+                         imageView.setRotation(-result.rotationDegrees);
+                         */
+                    }
+                });
+        if(subjects.hasNext() == false) exit();
+
+    }
+
+    // Saves PhotoResult photoResult to a file
+    private void savePicture(PhotoResult photoResult)
+    {
+        String path = getExternalFilesDir("photos") + "/" + currentSubject + ".jpg";
+        File photoFile = new File(path);
+        photoResult.saveToFile(photoFile);
+       // printText("Photo saved to file " + path);
+    }
+
+    // Changes to next activity
+    protected void exit()
+    {
+        Intent exit = new Intent(this, ExitActivity.class);
+        startActivity(exit);
     }
 
     private void setupFotoapparat() {
@@ -177,15 +222,6 @@ public class TraffickCamFotoActivity extends AppCompatActivity {
         });
     }
 
-    public void takePictureOnClick(View view)
-    {
-        takePicture();
-
-        if(subjects.hasNext() == false) exit();
-        //else printText();
-
-    }
-
     private Fotoapparat createFotoapparat(LensPosition position) {
         return Fotoapparat
                 .with(this)
@@ -219,47 +255,6 @@ public class TraffickCamFotoActivity extends AppCompatActivity {
                     }
                 })
                 .build();
-    }
-
-    private void takePicture() {
-
-        PhotoResult photoResult = fotoapparat.takePicture();
-
-        String path = getExternalFilesDir("photos") + "/" + currentSubject + ".jpg";
-
-        File photoFile = new File(path);
-
-        photoResult.saveToFile(photoFile);
-
-        // printText("Photo saved to file " + path);
-
-        photoResult
-                .toBitmap()
-                .whenAvailable(new PendingResult.Callback<BitmapPhoto>() {
-                    @Override
-                    public void onResult(BitmapPhoto result) {
-                        if(subjects.hasNext()) printText();
-                        /**
-                        ImageView imageView = (ImageView) findViewById(R.id.result);
-
-                        imageView.setImageBitmap(result.bitmap);
-                        imageView.setRotation(-result.rotationDegrees);
-                         */
-                    }
-                });
-
-
-    }
-
-    protected void exit()
-    {
-        Intent exit = new Intent(this, ExitActivity.class);
-        startActivity(exit);
-
-
-        /*Intent confirmHotel = new Intent(this, ConfirmHotelListActivity.class);
-        startActivity(confirmHotel);
-        */
     }
 
     @Override
