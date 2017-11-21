@@ -15,7 +15,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -60,21 +63,35 @@ public class HotelListActivity extends AppCompatActivity implements
     Context context;
     private GoogleApiClient client;
     private LocationRequest locationRequest;
+    EditText mEditText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hotel_list);
-        mList = (ListView) findViewById(R.id.hotel_list);
+        initmList();
+        mEditText = (EditText) findViewById(R.id.locationText);
         nearbyHotels = new ArrayList<String>();
         context = this;
-        printText("okay");
+        searchNearbyHotels();
     }
 
-    // TODO -- this is temp
-    public void tempButton(View view)
+    private void initmList()
     {
-        searchNearbyHotels();
+        mList = (ListView) findViewById(R.id.hotel_list);
+        mList.setOnItemClickListener(new OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
+                Object listItem = mList.getItemAtPosition(position);
+            }
+        });
+    }
+
+
+    public void searchOnClick(View view)
+    {
+        String keywords = mEditText.getText().toString().replace(" ", "%20");
+        searchNearbyHotels(keywords);
     }
 
     private void searchNearbyHotels()
@@ -84,6 +101,31 @@ public class HotelListActivity extends AppCompatActivity implements
         url = getUrl(latitude, longitude, "lodging");
 
         getNearbyPlacesData.execute();
+    }
+
+    private void searchNearbyHotels(String keywords)
+    {
+        HotelData getNearbyPlacesData = new HotelData();
+
+        url = getUrl(latitude, longitude, keywords, "lodging");
+
+        getNearbyPlacesData.execute();
+    }
+
+    private String getUrl(double latitude , double longitude, String keywords, String nearbyPlace)
+    {
+
+        StringBuilder googlePlaceUrl = new StringBuilder("https://maps.googleapis.com/maps/api/place/nearbysearch/json?");
+        googlePlaceUrl.append("location="+latitude+","+longitude);
+        googlePlaceUrl.append("&radius="+PROXIMITY_RADIUS);
+        googlePlaceUrl.append("&type="+nearbyPlace);
+        googlePlaceUrl.append("&sensor=true");
+        googlePlaceUrl.append("&keyword=" + keywords);
+        googlePlaceUrl.append("&key="+"AIzaSyBfIXGXMiK1NIS6bxcVJxN6R-n_gZFfvTM");
+
+        Log.d("MapsActivity", "url = "+googlePlaceUrl.toString());
+
+        return googlePlaceUrl.toString();
     }
 
     private String getUrl(double latitude , double longitude , String nearbyPlace)
@@ -184,7 +226,7 @@ public class HotelListActivity extends AppCompatActivity implements
 
         private void showNearbyPlaces(List<HashMap<String, String>> nearbyPlaceList)
         {
-            printText(""+nearbyPlaceList.size());
+            nearbyHotels.clear();
             for(int i = 0; i < nearbyPlaceList.size(); i++)
             {
                 HashMap<String, String> googlePlace = nearbyPlaceList.get(i);
@@ -192,11 +234,10 @@ public class HotelListActivity extends AppCompatActivity implements
                 String placeName = googlePlace.get("place_name");
                 String vicinity = googlePlace.get("vicinity");
                 nearbyHotels.add(placeName);
-                printText(placeName);
             }
-            ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>
+            mAdapter = new ArrayAdapter<String>
                     (context, android.R.layout.simple_list_item_1, nearbyHotels);
-            mList.setAdapter(arrayAdapter);
+            mList.setAdapter(mAdapter);
         }
     }
 }
