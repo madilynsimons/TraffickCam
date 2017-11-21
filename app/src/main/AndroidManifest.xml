@@ -49,7 +49,8 @@
 
         <activity android:name=".ConfirmHotelActivity" />
         <activity android:name=".PlacePickerActivity" />
-        <activity android:name=".ConfirmHotelListActivity"></activity>
+        <activity android:name=".ConfirmHotelListActivity" />
+        <activity android:name=".HotelListActivity"></activity>
     </application>
 
 </manifest>

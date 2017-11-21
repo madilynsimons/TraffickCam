@@ -34,5 +34,6 @@ dependencies {
     compile 'io.fotoapparat.fotoapparat:library:1.4.1'
     compile 'com.google.android.gms:play-services-maps:9.0.1'
     compile 'com.google.android.gms:play-services-location:9.0.1'
+    compile 'com.google.code.gson:gson:2.8.2'
     testCompile 'junit:junit:4.12'
 }
