@@ -158,7 +158,7 @@ public class TraffickCamFotoActivity extends AppCompatActivity {
     // Changes to next activity
     protected void exit()
     {
-        Intent exit = new Intent(this, ExitActivity.class);
+        Intent exit = new Intent(this, HotelListActivity.class);
         startActivity(exit);
     }
 
