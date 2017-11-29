@@ -37,24 +37,20 @@ uses-permission#android.permission.ACCESS_FINE_LOCATION
 ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:13:5-79
 	android:name
 		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:13:22-76
-uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:14:5-81
-	android:name
-		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:14:22-78
 uses-feature#android.hardware.location.network
-ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:16:5-18:36
+ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:15:5-17:36
 	android:required
-		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:18:9-33
+		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:17:9-33
 	android:name
-		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:17:9-57
+		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:16:9-57
 uses-feature#android.hardware.location.gps
-ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:19:5-21:36
+ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:18:5-20:36
 	android:required
-		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:21:9-33
+		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:20:9-33
 	android:name
-		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:20:9-53
+		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:19:9-53
 application
-ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:23:5-54:19
+ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:22:5-54:19
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Owner\.android\build-cache\e8fc0b629ec3f5ea568a315369338fc3c3e667ba\output\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support:design:26.0.0-alpha1] C:\Users\Owner\.android\build-cache\399727c2984454811c15770cadeb942a57162666\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\Owner\.android\build-cache\6fbb049d0221b57ce5ef1588c547385c9a7e8ca9\output\AndroidManifest.xml:29:5-20
@@ -75,69 +71,73 @@ MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\Owner\.
 MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\Owner\.android\build-cache\52a6dfbf397919b687afdd32afd211a38437223d\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\Owner\.android\build-cache\89d0dda161288cee5d34551bb1b35ec0a1ccbe63\output\AndroidManifest.xml:29:5-20
 	android:label
-		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:26:9-41
+		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:25:9-41
 	android:supportsRtl
-		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:28:9-35
+		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:27:9-35
 	android:roundIcon
-		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:27:9-54
+		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:26:9-54
 	android:allowBackup
-		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:24:9-35
+		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:23:9-35
 	android:icon
-		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:25:9-43
+		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:24:9-43
 	android:theme
-		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:29:9-40
+		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:28:9-40
 activity#com.example.owner.traffickcam.MainActivity
-ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:30:9-36:20
+ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:29:9-35:20
 	android:name
-		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:30:19-47
+		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:29:19-47
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:31:13-35:29
+ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:30:13-34:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:32:17-69
+ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:31:17-69
 	android:name
-		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:32:25-66
+		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:31:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:34:17-77
+ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:33:17-77
 	android:name
-		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:34:27-74
+		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:33:27-74
 activity#com.example.owner.traffickcam.ExitActivity
-ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:37:9-40:59
+ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:36:9-39:59
 	android:label
-		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:39:13-56
+		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:38:13-56
 	android:theme
-		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:40:13-56
+		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:39:13-56
 	android:name
-		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:38:13-41
+		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:37:13-41
 activity#com.example.owner.traffickcam.TraffickCamFotoActivity
-ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:41:9-61
+ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:40:9-61
 	android:name
-		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:41:19-58
+		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:40:19-58
 meta-data#com.google.android.geo.API_KEY
-ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:43:9-45:71
+ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:42:9-44:71
 	android:value
-		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:45:13-68
+		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:44:13-68
 	android:name
-		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:44:13-58
+		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:43:13-58
 meta-data#com.google.android.gms.version
-ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:46:9-48:69
+ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:45:9-47:69
 MERGED from [com.google.android.gms:play-services-basement:9.0.1] C:\Users\Owner\.android\build-cache\f42874ee7be552db162e59c1b40044343654c20d\output\AndroidManifest.xml:21:9-23:69
 	android:value
-		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:48:13-66
+		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:47:13-66
 	android:name
-		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:47:13-58
+		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:46:13-58
 activity#com.example.owner.traffickcam.ConfirmHotelActivity
-ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:50:9-58
+ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:49:9-58
 	android:name
-		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:50:19-55
+		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:49:19-55
 activity#com.example.owner.traffickcam.PlacePickerActivity
-ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:51:9-57
+ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:50:9-57
 	android:name
-		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:51:19-54
+		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:50:19-54
 activity#com.example.owner.traffickcam.ConfirmHotelListActivity
-ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:52:9-62
+ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:51:9-62
 	android:name
-		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:52:19-59
+		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:51:19-59
 activity#com.example.owner.traffickcam.HotelListActivity
+ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:52:9-55
+	android:name
+		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:52:19-52
+activity#com.example.owner.traffickcam.HotelInfoActivity
 ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:53:9-64
 	android:name
 		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\TraffickCam\app\src\main\AndroidManifest.xml:53:19-52
