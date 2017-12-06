@@ -11,6 +11,7 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <uses-feature
         android:name="android.hardware.location.network"
@@ -41,14 +42,11 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyBL99H2SrBdYDU0Emlpxz-2y5TuoaDIKWY" />
+            android:value="AIzaSyDlTwcKRDanIkhKboghxUS22O79AlF0kfM" />
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
-        <activity android:name=".ConfirmHotelActivity" />
-        <activity android:name=".PlacePickerActivity" />
-        <activity android:name=".ConfirmHotelListActivity" />
         <activity android:name=".HotelListActivity" />
         <activity android:name=".HotelInfoActivity"></activity>
     </application>

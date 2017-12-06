@@ -11,6 +11,7 @@ import android.os.AsyncTask;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
+import android.support.v4.app.FragmentActivity;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -24,15 +25,21 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.api.Api;
 import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.common.api.PendingResult;
+import com.google.android.gms.common.api.Status;
 import com.google.android.gms.location.LocationListener;
 import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationServices;
 
+import java.io.FileDescriptor;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 public class HotelListActivity extends AppCompatActivity implements
         GoogleApiClient.ConnectionCallbacks,
@@ -41,16 +48,16 @@ public class HotelListActivity extends AppCompatActivity implements
 
     ListView mList;
     List<String> nearbyHotels;
+    List<String> hotelIDs;
     private ArrayAdapter<String> mAdapter;
     int PROXIMITY_RADIUS = 10000;
-    double latitude = 39.981,longitude = -75.156;
+    double latitude,longitude;
     String url;
     Context context;
     private GoogleApiClient client;
     private LocationRequest locationRequest;
     public static final int REQUEST_LOCATION_CODE = 99;
     EditText mEditText;
-    private LocationListener mLocListener;
     List<HashMap<String, String>> googleHotels;
 
     @Override
@@ -61,14 +68,13 @@ public class HotelListActivity extends AppCompatActivity implements
         checkLocationPermission();
 
         initmList();
-        initmLocListener();
 
         mEditText = (EditText) findViewById(R.id.locationText);
         nearbyHotels = new ArrayList<String>();
+        hotelIDs = new ArrayList<String>();
         context = this;
 
-
-//        searchNearbyHotels();
+        buildGoogleApiClient();
     }
 
     private void initmList()
@@ -78,29 +84,19 @@ public class HotelListActivity extends AppCompatActivity implements
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
                 Object listItem = mList.getItemAtPosition(position);
-                hotelInfoActivity();
-                // todo
+                Intent intent = new Intent(context, HotelInfoActivity.class);
+                intent.putExtra("HOTEL", (String)listItem);
+                startActivity(intent);
             }
         });
     }
 
     private void hotelInfoActivity()
     {
-        Intent intent = new Intent(this, HotelInfoActivity.class);
-        startActivity(intent);
+    // TODO
+       // Intent intent = new Intent(this, HotelInfoActivity.class);
+     //   startActivity(intent);
     }
-
-
-    private void initmLocListener(){
-
-        mLocListener = new LocationListener() {
-            public void onLocationChanged(Location location) {
-                longitude = location.getLongitude();
-                latitude = location.getLatitude();
-            }
-        };
-    }
-
 
     public void searchOnClick(View view)
     {
@@ -112,7 +108,7 @@ public class HotelListActivity extends AppCompatActivity implements
     {
         HotelData getNearbyPlacesData = new HotelData();
 
-        url = getUrl(latitude, longitude, "lodging");
+        url = getUrl("lodging");
 
         getNearbyPlacesData.execute();
     }
@@ -121,29 +117,12 @@ public class HotelListActivity extends AppCompatActivity implements
     {
         HotelData getNearbyPlacesData = new HotelData();
 
-        url = getUrl(latitude, longitude, keywords, "lodging");
+        url = getUrl(keywords, "lodging");
 
         getNearbyPlacesData.execute();
     }
 
-    private void updateLatLon()
-    {
-        try{
-            LocationManager lm = (LocationManager)getSystemService(Context.LOCATION_SERVICE);
-            Location location = lm.getLastKnownLocation(LocationManager.GPS_PROVIDER);
-            longitude = location.getLongitude();
-            latitude = location.getLatitude();
-
-            String latlon = longitude + ", " + latitude;
-            printText(latlon);
-        }catch(SecurityException e)
-        {
-            // TODO
-        }
-    }
-
-
-    private String getUrl(double latitude , double longitude, String keywords, String nearbyPlace)
+    private String getUrl(String keywords, String nearbyPlace)
     {
 
         StringBuilder googlePlaceUrl = new StringBuilder("https://maps.googleapis.com/maps/api/place/nearbysearch/json?");
@@ -152,14 +131,14 @@ public class HotelListActivity extends AppCompatActivity implements
         googlePlaceUrl.append("&type="+nearbyPlace);
         googlePlaceUrl.append("&sensor=true");
         googlePlaceUrl.append("&keyword=" + keywords);
-        googlePlaceUrl.append("&key="+"AIzaSyBfIXGXMiK1NIS6bxcVJxN6R-n_gZFfvTM");
+        googlePlaceUrl.append("&key="+"AIzaSyDlTwcKRDanIkhKboghxUS22O79AlF0kfM");
 
         Log.d("MapsActivity", "url = "+googlePlaceUrl.toString());
 
         return googlePlaceUrl.toString();
     }
 
-    private String getUrl(double latitude , double longitude , String nearbyPlace)
+    private String getUrl(String nearbyPlace)
     {
 
         StringBuilder googlePlaceUrl = new StringBuilder("https://maps.googleapis.com/maps/api/place/nearbysearch/json?");
@@ -167,7 +146,7 @@ public class HotelListActivity extends AppCompatActivity implements
         googlePlaceUrl.append("&radius="+PROXIMITY_RADIUS);
         googlePlaceUrl.append("&type="+nearbyPlace);
         googlePlaceUrl.append("&sensor=true");
-        googlePlaceUrl.append("&key="+"AIzaSyBfIXGXMiK1NIS6bxcVJxN6R-n_gZFfvTM");
+        googlePlaceUrl.append("&key="+"AIzaSyDlTwcKRDanIkhKboghxUS22O79AlF0kfM");
 
         Log.d("MapsActivity", "url = "+googlePlaceUrl.toString());
 
@@ -181,20 +160,8 @@ public class HotelListActivity extends AppCompatActivity implements
         locationRequest.setFastestInterval(1000);
         locationRequest.setPriority(LocationRequest.PRIORITY_BALANCED_POWER_ACCURACY);
 
-
-        if(ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION ) == PackageManager.PERMISSION_GRANTED)
-        {
+        if(ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION ) == PackageManager.PERMISSION_GRANTED) {
             LocationServices.FusedLocationApi.requestLocationUpdates(client, locationRequest, this);
-            buildGoogleApiClient();
-
-            LocationManager locationManager = (LocationManager)
-                    getSystemService(Context.LOCATION_SERVICE);
-            Criteria criteria = new Criteria();
-
-            Location location = locationManager.getLastKnownLocation(locationManager
-                    .getBestProvider(criteria, false));
-            latitude = location.getLatitude();
-            longitude = location.getLongitude();
         }
     }
 
@@ -226,17 +193,12 @@ public class HotelListActivity extends AppCompatActivity implements
 
     @Override
     public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
-
     }
 
     @Override
     public void onLocationChanged(Location location) {
         latitude = location.getLatitude();
         longitude = location.getLongitude();
-        if(client != null)
-        {
-            LocationServices.FusedLocationApi.removeLocationUpdates(client,this);
-        }
     }
 
     public void printText(String text)
@@ -280,13 +242,15 @@ public class HotelListActivity extends AppCompatActivity implements
         {
             googleHotels = nearbyPlaceList;
             nearbyHotels.clear();
+            hotelIDs.clear();
             for(int i = 0; i < nearbyPlaceList.size(); i++)
             {
                 HashMap<String, String> googlePlace = nearbyPlaceList.get(i);
 
                 String placeName = googlePlace.get("place_name");
-                String vicinity = googlePlace.get("vicinity");
+                String placeID = googlePlace.get("place_id");
                 nearbyHotels.add(placeName);
+                hotelIDs.add(placeID);
             }
             mAdapter = new ArrayAdapter<String>
                     (context, android.R.layout.simple_list_item_1, nearbyHotels);

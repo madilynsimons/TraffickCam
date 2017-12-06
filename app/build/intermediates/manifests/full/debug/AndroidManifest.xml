@@ -17,6 +17,7 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <uses-feature
         android:name="android.hardware.location.network"
@@ -57,26 +58,17 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyBL99H2SrBdYDU0Emlpxz-2y5TuoaDIKWY" />
+            android:value="AIzaSyDlTwcKRDanIkhKboghxUS22O79AlF0kfM" />
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
-        <activity android:name="com.example.owner.traffickcam.ConfirmHotelActivity" />
-        <activity android:name="com.example.owner.traffickcam.PlacePickerActivity" />
-        <activity android:name="com.example.owner.traffickcam.ConfirmHotelListActivity" />
         <activity android:name="com.example.owner.traffickcam.HotelListActivity" />
         <activity android:name="com.example.owner.traffickcam.HotelInfoActivity" />
         <activity
             android:name="com.google.android.gms.common.api.GoogleApiActivity"
             android:exported="false"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-
-        <provider
-            android:name="com.google.firebase.provider.FirebaseInitProvider"
-            android:authorities="com.example.owner.traffickcam.firebaseinitprovider"
-            android:exported="false"
-            android:initOrder="100" />
     </application>
 
 </manifest>
