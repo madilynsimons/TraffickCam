@@ -91,13 +91,6 @@ public class HotelListActivity extends AppCompatActivity implements
         });
     }
 
-    private void hotelInfoActivity()
-    {
-    // TODO
-       // Intent intent = new Intent(this, HotelInfoActivity.class);
-     //   startActivity(intent);
-    }
-
     public void searchOnClick(View view)
     {
         String keywords = mEditText.getText().toString().replace(" ", "%20");
