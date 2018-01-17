@@ -11,9 +11,9 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 /**
- * Created by Owner on 10/29/2017.
+ * More info, see:
+ * https://www.androidtutorialpoint.com/intermediate/google-maps-search-nearby-displaying-nearby-places-using-google-places-api-google-maps-api-v2/
  */
-
 
 public class DownloadURL {
 

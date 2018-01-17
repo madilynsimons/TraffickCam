@@ -41,24 +41,27 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * More info, see:
+ * https://www.androidtutorialpoint.com/intermediate/google-maps-search-nearby-displaying-nearby-places-using-google-places-api-google-maps-api-v2/
+ */
+
 public class HotelListActivity extends AppCompatActivity implements
         GoogleApiClient.ConnectionCallbacks,
         GoogleApiClient.OnConnectionFailedListener,
         com.google.android.gms.location.LocationListener {
 
-    ListView mList;
-    List<String> nearbyHotels;
-    List<String> hotelIDs;
-    private ArrayAdapter<String> mAdapter;
-    int PROXIMITY_RADIUS = 10000;
-    double latitude,longitude;
-    String url;
-    Context context;
-    private GoogleApiClient client;
-    private LocationRequest locationRequest;
-    public static final int REQUEST_LOCATION_CODE = 99;
-    EditText mEditText;
-    List<HashMap<String, String>> googleHotels;
+    ListView mList; // ListView used to show nearby hotels
+    List<String> nearbyHotels; // list of nearby hotels
+    List<String> hotelIDs; // the IDs of the nearby hotels
+    private ArrayAdapter<String> mAdapter; // adapter used to assign nearbyHotels to mList
+    int PROXIMITY_RADIUS = 10000; // max distance a hotel can be from the user
+    double latitude,longitude; // latitude and longitude of the user
+    String url; // url to JSON file with info on all of the nearbyhotels
+    Context context; // this activity -- used to call HotelInfoActivity
+    private GoogleApiClient client; // google API client
+    EditText mEditText; // edit text used to get keywords from the user
+    List<HashMap<String, String>> googleHotels; // nearby hotels and all their info
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -97,15 +100,6 @@ public class HotelListActivity extends AppCompatActivity implements
         searchNearbyHotels(keywords);
     }
 
-    private void searchNearbyHotels()
-    {
-        HotelData getNearbyPlacesData = new HotelData();
-
-        url = getUrl("lodging");
-
-        getNearbyPlacesData.execute();
-    }
-
     private void searchNearbyHotels(String keywords)
     {
         HotelData getNearbyPlacesData = new HotelData();
@@ -131,23 +125,9 @@ public class HotelListActivity extends AppCompatActivity implements
         return googlePlaceUrl.toString();
     }
 
-    private String getUrl(String nearbyPlace)
-    {
-
-        StringBuilder googlePlaceUrl = new StringBuilder("https://maps.googleapis.com/maps/api/place/nearbysearch/json?");
-        googlePlaceUrl.append("location="+latitude+","+longitude);
-        googlePlaceUrl.append("&radius="+PROXIMITY_RADIUS);
-        googlePlaceUrl.append("&type="+nearbyPlace);
-        googlePlaceUrl.append("&sensor=true");
-        googlePlaceUrl.append("&key="+"AIzaSyDlTwcKRDanIkhKboghxUS22O79AlF0kfM");
-
-        Log.d("MapsActivity", "url = "+googlePlaceUrl.toString());
-
-        return googlePlaceUrl.toString();
-    }
-
     @Override
     public void onConnected(@Nullable Bundle bundle) {
+        LocationRequest locationRequest;
         locationRequest = new LocationRequest();
         locationRequest.setInterval(100);
         locationRequest.setFastestInterval(1000);
@@ -160,6 +140,7 @@ public class HotelListActivity extends AppCompatActivity implements
 
     public boolean checkLocationPermission()
     {
+        int REQUEST_LOCATION_CODE = 99;
         if(ContextCompat.checkSelfPermission(this,Manifest.permission.ACCESS_FINE_LOCATION)  != PackageManager.PERMISSION_GRANTED )
         {
 
@@ -178,7 +159,6 @@ public class HotelListActivity extends AppCompatActivity implements
             return true;
     }
 
-
     @Override
     public void onConnectionSuspended(int i) {
 
@@ -194,10 +174,6 @@ public class HotelListActivity extends AppCompatActivity implements
         longitude = location.getLongitude();
     }
 
-    public void printText(String text)
-    {
-        Toast.makeText(this, text, Toast.LENGTH_LONG).show();
-    }
 
     protected synchronized void buildGoogleApiClient() {
         client = new GoogleApiClient.Builder(this).addConnectionCallbacks(this).addOnConnectionFailedListener(this).addApi(LocationServices.API).build();
