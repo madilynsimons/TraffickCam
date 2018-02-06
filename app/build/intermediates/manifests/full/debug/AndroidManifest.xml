@@ -64,6 +64,9 @@
 
         <activity android:name="com.simons.owner.traffickcam.HotelListActivity" />
         <activity android:name="com.simons.owner.traffickcam.HotelInfoActivity" />
+        <activity android:name="com.simons.owner.traffickcam.LabelPictureActivity" />
+        <activity android:name="com.simons.owner.traffickcam.LabelPicture2Activity" />
+        <activity android:name="com.simons.owner.traffickcam.LabelPicture3Acitivity" />
         <activity
             android:name="com.google.android.gms.common.api.GoogleApiActivity"
             android:exported="false"

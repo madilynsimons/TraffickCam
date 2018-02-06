@@ -47,7 +47,10 @@
             android:value="@integer/google_play_services_version" />
 
         <activity android:name=".HotelListActivity" />
-        <activity android:name=".HotelInfoActivity"></activity>
+        <activity android:name=".HotelInfoActivity" />
+        <activity android:name=".LabelPictureActivity" />
+        <activity android:name=".LabelPicture2Activity" />
+        <activity android:name=".LabelPicture3Acitivity"></activity>
     </application>
 
 </manifest>

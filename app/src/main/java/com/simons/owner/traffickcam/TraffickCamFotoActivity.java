@@ -1,6 +1,7 @@
 package com.simons.owner.traffickcam;
 
 import android.Manifest;
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
@@ -47,25 +48,17 @@ public class TraffickCamFotoActivity extends AppCompatActivity {
     private CameraView cameraView; // camera view -- how the user sees what the camera sees
     private Fotoapparat fotoapparat; // open source camera
 
-    /*
-     *  List<String> s contains a list of things the user will be told to take pictures of.
-     *  If you wish to change the list of things the user should be taking pictures of,
-     *  feel free to change the list here.
-     */
-    protected List<String> s
-            = Arrays.asList("window", "bed", "TV", "bathroom");
+    private int photoID;
 
-    // iterates List s -- use this to go through subjects
-    protected ListIterator<String> subjects
-            = s.listIterator();
+    public Object activity = this;
 
-    // holds a copy of the current subject
-    protected String currentSubject;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(com.simons.owner.traffickcam.R.layout.activity_traffick_cam_foto);
+
+        photoID = 0;
 
         // TODO -- Camera permission is absolutely necessary to proceed
         // make sure that the app actually has permission to use the camera
@@ -77,7 +70,6 @@ public class TraffickCamFotoActivity extends AppCompatActivity {
 
         fotoapparat = initFotoapparat();
 
-        printNextInstruction();
     }
 
     @Override
@@ -142,18 +134,10 @@ public class TraffickCamFotoActivity extends AppCompatActivity {
                 .build();
     }
 
-    // Uses Toast to tell the user what to take a picture of
-    // TODO -- find an alternative to Toast
-    protected void printNextInstruction()
-    {
-        currentSubject = subjects.next();
-        Toast.makeText(this, getString(com.simons.owner.traffickcam.R.string.take_pic_message) + " " + currentSubject + ".", Toast.LENGTH_LONG).show();
-    }
-
     /**
      *  takePictureOnClick will take a picture whenever the user touches the screen
      *  As of right now, the photo taken saves to a generic file path
-     *  TODO -- save photo to corect file path
+     *  TODO -- save photo to correct file path
      *  If there are more subjects left to be iterated through, the next instruction is printed
      */
     public void takePictureOnClick(View view)
@@ -169,10 +153,11 @@ public class TraffickCamFotoActivity extends AppCompatActivity {
                 .whenAvailable(new PendingResult.Callback<BitmapPhoto>() {
                     @Override
                     public void onResult(BitmapPhoto result) {
-                        if(subjects.hasNext()) printNextInstruction();
+                        //TODO
+                        Intent labelPicture = new Intent((Context) activity, LabelPicture3Acitivity.class);
+                        startActivity(labelPicture);
                     }
                 });
-        if(subjects.hasNext() == false) exit();
 
     }
 
@@ -180,7 +165,7 @@ public class TraffickCamFotoActivity extends AppCompatActivity {
     // TODO -- get proper final directory
     private void savePicture(PhotoResult photoResult)
     {
-        String path = getExternalFilesDir("photos") + "/" + currentSubject + ".jpg";
+        String path = getExternalFilesDir("photos") + "/" + (photoID++) + ".jpg";
         File photoFile = new File(path);
         photoResult.saveToFile(photoFile);
     }
@@ -190,6 +175,7 @@ public class TraffickCamFotoActivity extends AppCompatActivity {
     {
         Intent exit = new Intent(this, HotelListActivity.class);
         startActivity(exit);
+        finish(); // TODO: test this
     }
 
 
