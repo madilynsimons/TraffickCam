@@ -25,5 +25,11 @@
         android:onClick="takePictureOnClick"
         app:srcCompat="@android:drawable/ic_menu_camera" />
 
+    <ImageView
+        android:id="@+id/result"
+        android:layout_width="161dp"
+        android:layout_height="172dp"
+        />
+
 
 </FrameLayout>

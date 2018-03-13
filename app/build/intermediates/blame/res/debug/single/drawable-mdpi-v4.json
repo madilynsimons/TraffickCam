@@ -44,16 +44,16 @@
         "source": "C:\\Users\\Owner\\.android\\build-cache\\6fbb049d0221b57ce5ef1588c547385c9a7e8ca9\\output\\res\\drawable-mdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
     },
     {
-        "merged": "C:\\Users\\Owner\\Documents\\Projects\\AndroidStudioProjects\\TraffickCamV1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\notification_bg_low_normal.9.png",
-        "source": "C:\\Users\\Owner\\.android\\build-cache\\6fbb049d0221b57ce5ef1588c547385c9a7e8ca9\\output\\res\\drawable-mdpi-v4\\notification_bg_low_normal.9.png"
+        "merged": "C:\\Users\\Owner\\Documents\\Projects\\AndroidStudioProjects\\_traffickcam\\v2\\TraffickCam\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\notification_bg_normal.9.png",
+        "source": "C:\\Users\\Owner\\.android\\build-cache\\6fbb049d0221b57ce5ef1588c547385c9a7e8ca9\\output\\res\\drawable-mdpi-v4\\notification_bg_normal.9.png"
     },
     {
         "merged": "C:\\Users\\Owner\\Documents\\Projects\\AndroidStudioProjects\\TraffickCam\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_check_light.png",
         "source": "C:\\Users\\Owner\\.android\\build-cache\\2f124a27c5a4264d07a0de4c21d4363628c35fbc\\output\\res\\drawable-mdpi-v4\\ic_check_light.png"
     },
     {
-        "merged": "C:\\Users\\Owner\\Documents\\Projects\\AndroidStudioProjects\\_traffickcam\\v2\\TraffickCam\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\notification_bg_normal.9.png",
-        "source": "C:\\Users\\Owner\\.android\\build-cache\\6fbb049d0221b57ce5ef1588c547385c9a7e8ca9\\output\\res\\drawable-mdpi-v4\\notification_bg_normal.9.png"
+        "merged": "C:\\Users\\Owner\\Documents\\Projects\\AndroidStudioProjects\\TraffickCamV1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\notification_bg_low_normal.9.png",
+        "source": "C:\\Users\\Owner\\.android\\build-cache\\6fbb049d0221b57ce5ef1588c547385c9a7e8ca9\\output\\res\\drawable-mdpi-v4\\notification_bg_low_normal.9.png"
     },
     {
         "merged": "C:\\Users\\Owner\\Documents\\Projects\\AndroidStudioProjects\\TraffickCam\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_btn_check_to_on_mtrl_000.png",
@@ -80,12 +80,12 @@
         "source": "C:\\Users\\Owner\\.android\\build-cache\\6fbb049d0221b57ce5ef1588c547385c9a7e8ca9\\output\\res\\drawable-mdpi-v4\\abc_ic_star_half_black_36dp.png"
     },
     {
-        "merged": "C:\\Users\\Owner\\Documents\\Projects\\AndroidStudioProjects\\_traffickcam\\v2\\TraffickCam\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_spinner_mtrl_am_alpha.9.png",
-        "source": "C:\\Users\\Owner\\.android\\build-cache\\6fbb049d0221b57ce5ef1588c547385c9a7e8ca9\\output\\res\\drawable-mdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
-    },
-    {
         "merged": "C:\\Users\\Owner\\Documents\\Projects\\AndroidStudioProjects\\_traffickcam\\v2\\TraffickCam\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png",
         "source": "C:\\Users\\Owner\\.android\\build-cache\\6fbb049d0221b57ce5ef1588c547385c9a7e8ca9\\output\\res\\drawable-mdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Owner\\Documents\\Projects\\AndroidStudioProjects\\_traffickcam\\v2\\TraffickCam\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_spinner_mtrl_am_alpha.9.png",
+        "source": "C:\\Users\\Owner\\.android\\build-cache\\6fbb049d0221b57ce5ef1588c547385c9a7e8ca9\\output\\res\\drawable-mdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
     },
     {
         "merged": "C:\\Users\\Owner\\Documents\\Projects\\AndroidStudioProjects\\TraffickCamV1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png",

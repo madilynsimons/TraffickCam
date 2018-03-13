@@ -2,19 +2,21 @@ package com.simons.owner.traffickcam;
 
 import android.Manifest;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.Toast;
+import android.widget.ImageView;
 
+import java.io.ByteArrayOutputStream;
 import java.io.File;
-import java.util.Arrays;
-import java.util.List;
-import java.util.ListIterator;
 
 import io.fotoapparat.Fotoapparat;
 import io.fotoapparat.parameter.LensPosition;
@@ -52,6 +54,12 @@ public class TraffickCamFotoActivity extends AppCompatActivity {
 
     public Object activity = this;
 
+    public ImageView imageView;
+
+    AlertDialog dialog;
+    String[] hotelItems = {"Bed", "Lamp", "Wall Art", "Chair",
+            "TV", "Window", "Door"};
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,7 +77,55 @@ public class TraffickCamFotoActivity extends AppCompatActivity {
         cameraView.setVisibility(View.VISIBLE);
 
         fotoapparat = initFotoapparat();
+        makeDialogue();
+      //  imageView = (ImageView) dialog.findViewById(R.id.dialog_imageview);
+        //imageView.setImageResource(R.drawable.genhotel);
 
+
+
+    }
+
+    private void makeDialogue() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        LayoutInflater factory = LayoutInflater.from(TraffickCamFotoActivity.this);
+        View view = factory.inflate(R.layout.alert_dialogue, null);
+
+        imageView = (ImageView) view.findViewById(R.id.dialog_imageview);
+
+        builder.setTitle("Select items in this photo.")
+                .setView(view)
+                .setPositiveButton("FINISH", new DialogInterface.OnClickListener(){
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        // TODO
+                    }
+                })
+                .setNegativeButton("CONTINUE", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        // TODO
+                        // clear the selected checkboxes
+                    }
+                })
+                /*
+                .setMultiChoiceItems(hotelItems, null,
+                        new DialogInterface.OnMultiChoiceClickListener()
+                        {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which, boolean isChecked) {
+                                // TODO
+                            }
+                        })
+        */;
+
+        dialog = builder.create();
+
+        // TODO change color
+        //dialog.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
+    }
+
+    public void ShowLabels()
+    {
+        dialog.show();
     }
 
     @Override
@@ -154,10 +210,32 @@ public class TraffickCamFotoActivity extends AppCompatActivity {
                     @Override
                     public void onResult(BitmapPhoto result) {
                         //TODO
-                        Intent labelPicture = new Intent((Context) activity, LabelPicture3Acitivity.class);
-                        startActivity(labelPicture);
+                       // sendHotelPhoto(result.bitmap);
+                       // Intent labelPicture = new Intent((Context) activity, LabelPicture3Acitivity.class);
+                        //labelPicture.putExtra("PHOTOBYTES", bs.toByteArray());
+
+                        imageView.setImageBitmap(result.bitmap);
+                        imageView.setRotation(-result.rotationDegrees);
+
+
+
+                        ShowLabels();
+
+                       // startActivity(labelPicture);
                     }
                 });
+
+    }
+
+    private void sendHotelPhoto(Bitmap b)
+    {
+        ByteArrayOutputStream bs = new ByteArrayOutputStream();
+        b.compress(Bitmap.CompressFormat.PNG, 50, bs);
+
+        Intent labelPicture = new Intent((Context) activity, LabelPicture3Acitivity.class);
+        labelPicture.putExtra("PHOTOBYTES", bs.toByteArray());
+
+        startActivity(labelPicture);
 
     }
 
