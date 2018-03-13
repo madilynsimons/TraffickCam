@@ -13,7 +13,9 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -56,9 +58,13 @@ public class TraffickCamFotoActivity extends AppCompatActivity {
 
     public ImageView imageView;
 
+    public View view; // dialogue box TODO - rename this
+
+    // checkboxes
+    public CheckBox checkBoxes[];
+    public ProgressBar imageLoadingBar;
+
     AlertDialog dialog;
-    String[] hotelItems = {"Bed", "Lamp", "Wall Art", "Chair",
-            "TV", "Window", "Door"};
 
 
     @Override
@@ -77,6 +83,7 @@ public class TraffickCamFotoActivity extends AppCompatActivity {
         cameraView.setVisibility(View.VISIBLE);
 
         fotoapparat = initFotoapparat();
+
         makeDialogue();
       //  imageView = (ImageView) dialog.findViewById(R.id.dialog_imageview);
         //imageView.setImageResource(R.drawable.genhotel);
@@ -88,9 +95,22 @@ public class TraffickCamFotoActivity extends AppCompatActivity {
     private void makeDialogue() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         LayoutInflater factory = LayoutInflater.from(TraffickCamFotoActivity.this);
-        View view = factory.inflate(R.layout.alert_dialogue, null);
+        view = factory.inflate(R.layout.alert_dialogue, null);
 
         imageView = (ImageView) view.findViewById(R.id.dialog_imageview);
+        imageView.setVisibility(View.INVISIBLE);
+
+        checkBoxes = new CheckBox[7];
+        checkBoxes[0] = (CheckBox) view.findViewById(R.id.checkBox0);
+        checkBoxes[1] = (CheckBox) view.findViewById(R.id.checkBox1);
+        checkBoxes[2] = (CheckBox) view.findViewById(R.id.checkBox2);
+        checkBoxes[3] = (CheckBox) view.findViewById(R.id.checkBox3);
+        checkBoxes[4] = (CheckBox) view.findViewById(R.id.checkBox4);
+        checkBoxes[5] = (CheckBox) view.findViewById(R.id.checkBox5);
+        checkBoxes[6] = (CheckBox) view.findViewById(R.id.checkBox6);
+
+        imageLoadingBar = (ProgressBar) view.findViewById(R.id.progressBar);
+        imageLoadingBar.setVisibility(View.VISIBLE);
 
         builder.setTitle("Select items in this photo.")
                 .setView(view)
@@ -98,24 +118,15 @@ public class TraffickCamFotoActivity extends AppCompatActivity {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         // TODO
+                        exit();
                     }
                 })
                 .setNegativeButton("CONTINUE", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
                         // TODO
-                        // clear the selected checkboxes
+                        // get checkbox info
                     }
-                })
-                /*
-                .setMultiChoiceItems(hotelItems, null,
-                        new DialogInterface.OnMultiChoiceClickListener()
-                        {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which, boolean isChecked) {
-                                // TODO
-                            }
-                        })
-        */;
+                });
 
         dialog = builder.create();
 
@@ -125,8 +136,19 @@ public class TraffickCamFotoActivity extends AppCompatActivity {
 
     public void ShowLabels()
     {
+        ClearCheckboxes();
         dialog.show();
     }
+
+    private void ClearCheckboxes()
+    {
+        int n = checkBoxes.length;
+        for(int i = 0; i < n; i++)
+        {
+            if(checkBoxes[i].isChecked()) checkBoxes[i].setChecked(false);
+        }
+    }
+
 
     @Override
     protected void onStart() {
@@ -201,6 +223,10 @@ public class TraffickCamFotoActivity extends AppCompatActivity {
         PhotoResult photoResult = fotoapparat.takePicture(); // takes photo
         savePicture(photoResult); // saves photo
 
+        imageLoadingBar.setVisibility(View.VISIBLE);
+        imageView.setVisibility(View.INVISIBLE);
+        ShowLabels();
+
         // When the photo is available,
         // if there are more subjects to take pictures of, the app will tell the user to do so
         // else, the next activity is triggered
@@ -216,10 +242,8 @@ public class TraffickCamFotoActivity extends AppCompatActivity {
 
                         imageView.setImageBitmap(result.bitmap);
                         imageView.setRotation(-result.rotationDegrees);
-
-
-
-                        ShowLabels();
+                        imageLoadingBar.setVisibility(View.INVISIBLE);
+                        imageView.setVisibility(View.VISIBLE);
 
                        // startActivity(labelPicture);
                     }

@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Mon Mar 12 20:19:46 EDT 2018
+#Mon Mar 12 21:24:09 EDT 2018
 210.set=ANDROID_RESOURCE
 282.file=C\:\\Users\\Owner\\Documents\\Projects\\AndroidStudioProjects\\_traffickcam\\v2\\TraffickCam\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\charmander.bmp
 14.set=ANDROID_RESOURCE
