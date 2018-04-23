@@ -319,13 +319,13 @@ public class ImagePickerActivity extends AppCompatActivity implements CameraHost
 
     public void showDialog()
     {
-        /*
+
         imageLoadingBar.setVisibility(View.VISIBLE);
         dialogView.setVisibility(View.INVISIBLE);
         ClearCheckboxes();
         setEnabledDialogButtons(false);
         dialog.show();
-        */
+
 
     }
 

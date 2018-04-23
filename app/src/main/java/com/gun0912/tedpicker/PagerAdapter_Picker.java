@@ -9,6 +9,8 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
+import com.simons.owner.traffickcam2.CameraFragment;
+
 
 public class PagerAdapter_Picker extends FragmentPagerAdapter {
 
@@ -38,9 +40,12 @@ public class PagerAdapter_Picker extends FragmentPagerAdapter {
 
         switch (position) {
             case 0:
+                /*
                 CwacCameraFragment profileInfoFragment = new CwacCameraFragment();
                 CwacCameraFragment.setConfig(ImagePickerActivity.getConfig());
                 return profileInfoFragment;
+                */
+                return new CameraFragment();
 
 
             case 1:

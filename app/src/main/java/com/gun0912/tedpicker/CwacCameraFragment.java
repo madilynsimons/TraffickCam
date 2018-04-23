@@ -333,7 +333,6 @@ public class CwacCameraFragment extends Fragment implements View.OnClickListener
             ((ImagePickerActivity)getActivity()).showDialog();
 
         } catch (IllegalStateException ex) {
-
             Util.toast(this, getResources().getString(com.simons.owner.traffickcam2.R.string.focusing));
         }
 
@@ -372,14 +371,9 @@ public class CwacCameraFragment extends Fragment implements View.OnClickListener
     }
 
     public void showTakenPicture(Uri uri) {
-        //((ImagePickerActivity)getActivity()).setUri(uri);
 
         ImagePickerActivity mImagePickerActivity = ((ImagePickerActivity) getActivity());
 
-        /*
-        mImagePickerActivity.NewestUri(uri);
-        mImagePickerActivity.setUri(uri);
-        */
         mImagePickerActivity.addImage(uri);
 
         GalleryFragment mGalleryFragment = mImagePickerActivity.getGalleryFragment();
