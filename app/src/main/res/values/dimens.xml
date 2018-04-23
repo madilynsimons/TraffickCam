@@ -4,4 +4,14 @@
     <!-- TODO, the Y value is a bit off... play with that at some point -->
     <dimen name="map_dx">10dp</dimen>
     <dimen name="map_dy">-100dp</dimen>
+    <dimen name="app_camera_height">150dp</dimen>
+    <dimen name="bottom_height">150dp</dimen>
+    <dimen name="ted_picker_selected_image_height">90dp</dimen>
+    <dimen name="ted_picker_fab_elevation">8dp</dimen>
+    <dimen name="ted_picker_fab_size">60dp</dimen>
+    <dimen name="ted_picker_fab_press_translation_z">9dp</dimen>
+
+
+    <dimen name="ted_picker_camera_height">500dp</dimen>
+
 </resources>

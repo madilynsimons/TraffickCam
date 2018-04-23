@@ -1,12 +1,38 @@
 <resources>
-    <string name="app_name">TraffickCam</string>
+    <string name="app_name">TraffickCam2</string>
     <string name="default_hotel">Hotel</string>
     <string name="default_room">Room Number</string>
     <string name="take_photo_help">Touch anywhere on screen to take picture</string>
     <string name="camera_not_found">No camera harware found</string>
     <string name="title_activity_traffick_camera">TraffickCameraActivity</string>
     <string name="invalid_hotel_input">Please enter a valid hotel and room number</string>
-    <string name="title_activity_exit">ExitActivity</string>
-    <string name="exit_message">Thank you for using TraffickCam!</string>
-    <string name="take_pic_message">Take a picture of a </string>
+    <string name="title_activity_permissions">PermissionsActivity</string>
+    <string name="custom_title">TraffickCam</string>
+
+    <string name="progress_title">Processing..</string>
+
+    <string name="done">Done</string>
+
+
+    <string-array name="tab_titles">
+        <item>Camera</item>
+        <item>Gallery</item>
+    </string-array>
+
+
+    <string name="toolbar_title">TraffickCam</string>
+    <string name="no_image">No images selected...</string>
+
+    <string name="selected_image">Photos to submit</string>
+
+
+    <string name="max_count_msg">%1$d images selected already</string>
+    <string name="min_count_msg">you have to choice %1$d images</string>
+
+    <string name="focusing">focusing/flash...wait a minute</string>
+
+
+    <string name="default_directory">Pictures</string>
+    <string name="title_activity_change_hotel">ChangeHotelActivity</string>
+
 </resources>

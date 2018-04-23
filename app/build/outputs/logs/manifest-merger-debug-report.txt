@@ -1,60 +1,83 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam\app\src\main\AndroidManifest.xml:2:1-56:12
+ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml:2:1-64:12
 	package
-		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam\app\src\main\AndroidManifest.xml:3:5-43
-		INJECTED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml:3:5-44
+		INJECTED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml:2:11-69
 	android:versionCode
-		INJECTED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml
 uses-feature#android.hardware.camera
-ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam\app\src\main\AndroidManifest.xml:6:5-8:35
+ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml:6:5-8:35
+MERGED from [com.github.google:cameraview:-SNAPSHOT] C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\build\intermediates\exploded-aar\com.github.google\cameraview\-SNAPSHOT\AndroidManifest.xml:23:5-60
 	android:required
-		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam\app\src\main\AndroidManifest.xml:8:9-32
+		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml:8:9-32
+		MERGED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml:8:9-32
 	android:name
-		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam\app\src\main\AndroidManifest.xml:7:9-47
+		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml:7:9-47
+uses-feature#android.hardware.camera2.full
+ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml:9:5-66
+	android:name
+		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml:9:19-63
+uses-feature#android.hardware.camera.autofocus
+ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml:10:5-12:36
+MERGED from [com.github.google:cameraview:-SNAPSHOT] C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\build\intermediates\exploded-aar\com.github.google\cameraview\-SNAPSHOT\AndroidManifest.xml:24:5-26:36
+	android:required
+		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml:12:9-33
+	android:name
+		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml:11:9-57
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam\app\src\main\AndroidManifest.xml:10:5-67
+ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml:14:5-67
 MERGED from [com.google.android.gms:play-services-maps:10.0.1] C:\Users\Owner\.android\build-cache\5191046dcaaba8a19022ca49567e330125394bc2\output\AndroidManifest.xml:20:5-66
 	android:name
-		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam\app\src\main\AndroidManifest.xml:10:22-64
+		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml:14:22-64
+uses-permission#android.permission.CAMERA
+ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml:15:5-65
+MERGED from [io.fotoapparat.fotoapparat:library:1.4.1] C:\Users\Owner\.android\build-cache\09316dcee947fb1a5410b92f90e9f6772079bd80\output\AndroidManifest.xml:9:5-65
+MERGED from [com.github.google:cameraview:-SNAPSHOT] C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\build\intermediates\exploded-aar\com.github.google\cameraview\-SNAPSHOT\AndroidManifest.xml:21:5-65
+	android:name
+		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml:15:22-62
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam\app\src\main\AndroidManifest.xml:11:5-79
+ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml:16:5-79
 MERGED from [com.google.android.gms:play-services-maps:10.0.1] C:\Users\Owner\.android\build-cache\5191046dcaaba8a19022ca49567e330125394bc2\output\AndroidManifest.xml:19:5-78
 	android:name
-		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam\app\src\main\AndroidManifest.xml:11:22-76
+		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml:16:22-76
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam\app\src\main\AndroidManifest.xml:12:5-81
+ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml:17:5-81
 	android:name
-		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam\app\src\main\AndroidManifest.xml:12:22-78
+		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml:17:22-78
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam\app\src\main\AndroidManifest.xml:13:5-79
+ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml:18:5-79
 	android:name
-		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam\app\src\main\AndroidManifest.xml:13:22-76
+		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml:18:22-76
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam\app\src\main\AndroidManifest.xml:14:5-81
+ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml:19:5-81
 	android:name
-		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam\app\src\main\AndroidManifest.xml:14:22-78
+		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml:19:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml:20:5-80
+	android:name
+		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml:20:22-77
 uses-feature#android.hardware.location.network
-ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam\app\src\main\AndroidManifest.xml:16:5-18:36
+ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml:22:5-24:36
 	android:required
-		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam\app\src\main\AndroidManifest.xml:18:9-33
+		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml:24:9-33
 	android:name
-		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam\app\src\main\AndroidManifest.xml:17:9-57
+		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml:23:9-57
 uses-feature#android.hardware.location.gps
-ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam\app\src\main\AndroidManifest.xml:19:5-21:36
+ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml:25:5-27:36
 	android:required
-		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam\app\src\main\AndroidManifest.xml:21:9-33
+		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml:27:9-33
 	android:name
-		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam\app\src\main\AndroidManifest.xml:20:9-53
+		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml:26:9-53
 application
-ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam\app\src\main\AndroidManifest.xml:23:5-54:19
+ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml:29:5-62:19
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Owner\.android\build-cache\e8fc0b629ec3f5ea568a315369338fc3c3e667ba\output\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support:design:26.0.0-alpha1] C:\Users\Owner\.android\build-cache\399727c2984454811c15770cadeb942a57162666\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\Owner\.android\build-cache\6fbb049d0221b57ce5ef1588c547385c9a7e8ca9\output\AndroidManifest.xml:29:5-20
@@ -67,6 +90,7 @@ MERGED from [com.google.android.gms:play-services-location:10.0.1] C:\Users\Owne
 MERGED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\Owner\.android\build-cache\f53a7a5b13189e539c5bc38735a6cc4ae4107d2d\output\AndroidManifest.xml:18:5-20:19
 MERGED from [com.google.android.gms:play-services-tasks:10.0.1] C:\Users\Owner\.android\build-cache\e5d6bb8696dbb58776957232838c1cc053492f90\output\AndroidManifest.xml:4:5-19
 MERGED from [com.google.android.gms:play-services-basement:10.0.1] C:\Users\Owner\.android\build-cache\6d75fe332450eb861f57e78c65fd36208006eabd\output\AndroidManifest.xml:19:5-21:19
+MERGED from [com.github.google:cameraview:-SNAPSHOT] C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\build\intermediates\exploded-aar\com.github.google\cameraview\-SNAPSHOT\AndroidManifest.xml:28:5-20
 MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\Owner\.android\build-cache\ed720d19c0d76c0f3687aa3f1de16b1081421f16\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\Owner\.android\build-cache\d00e9168d98e932856b60f9ebe35100ffae50d84\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\Owner\.android\build-cache\a421cf6768c9eecad37f38a4f49e77dae46a3554\output\AndroidManifest.xml:29:5-20
@@ -74,76 +98,70 @@ MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\Owner\.
 MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\Owner\.android\build-cache\52a6dfbf397919b687afdd32afd211a38437223d\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\Owner\.android\build-cache\89d0dda161288cee5d34551bb1b35ec0a1ccbe63\output\AndroidManifest.xml:29:5-20
 MERGED from [com.google.maps.android:android-maps-utils:0.4.4] C:\Users\Owner\.android\build-cache\83d1f05883a30279f30813cbe2059578179bda6e\output\AndroidManifest.xml:7:5-11:19
+MERGED from [com.android.volley:volley:1.0.0] C:\Users\Owner\.android\build-cache\3daecb99cba90fbc39013953a5fdc299c719e98a\output\AndroidManifest.xml:9:5-20
+MERGED from [com.commonsware.cwac:camera:0.6.12] C:\Users\Owner\.android\build-cache\fa8c44cd66b7ba92015ee2cb8616ced1418491fb\output\AndroidManifest.xml:11:5-20
 	android:label
-		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam\app\src\main\AndroidManifest.xml:26:9-41
+		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml:32:9-41
 	android:supportsRtl
-		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam\app\src\main\AndroidManifest.xml:28:9-35
+		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml:34:9-35
 	android:roundIcon
-		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam\app\src\main\AndroidManifest.xml:27:9-54
+		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml:33:9-54
 	android:allowBackup
-		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam\app\src\main\AndroidManifest.xml:24:9-35
+		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml:30:9-35
 	android:icon
-		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam\app\src\main\AndroidManifest.xml:25:9-43
+		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml:31:9-43
 	android:theme
-		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam\app\src\main\AndroidManifest.xml:29:9-40
-activity#com.simons.owner.traffickcam.TraffickCamFotoActivity
-ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam\app\src\main\AndroidManifest.xml:30:9-36:20
+		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml:35:9-40
+activity#com.simons.owner.traffickcam2.PermissionsActivity
+ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml:36:9-37:20
 	android:name
-		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam\app\src\main\AndroidManifest.xml:30:19-58
-intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam\app\src\main\AndroidManifest.xml:31:13-35:29
-action#android.intent.action.MAIN
-ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam\app\src\main\AndroidManifest.xml:32:17-69
-	android:name
-		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam\app\src\main\AndroidManifest.xml:32:25-66
-category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam\app\src\main\AndroidManifest.xml:34:17-77
-	android:name
-		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam\app\src\main\AndroidManifest.xml:34:27-74
-activity#com.simons.owner.traffickcam.ExitActivity
-ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam\app\src\main\AndroidManifest.xml:37:9-40:59
-	android:label
-		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam\app\src\main\AndroidManifest.xml:39:13-56
-	android:theme
-		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam\app\src\main\AndroidManifest.xml:40:13-56
-	android:name
-		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam\app\src\main\AndroidManifest.xml:38:13-41
+		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml:36:19-54
 meta-data#com.google.android.geo.API_KEY
-ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam\app\src\main\AndroidManifest.xml:42:9-44:71
+ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml:39:9-41:71
 	android:value
-		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam\app\src\main\AndroidManifest.xml:44:13-68
+		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml:41:13-68
 	android:name
-		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam\app\src\main\AndroidManifest.xml:43:13-58
+		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml:40:13-58
 meta-data#com.google.android.gms.version
-ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam\app\src\main\AndroidManifest.xml:45:9-47:69
+ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml:42:9-44:69
 MERGED from [com.google.android.gms:play-services-basement:10.0.1] C:\Users\Owner\.android\build-cache\6d75fe332450eb861f57e78c65fd36208006eabd\output\AndroidManifest.xml:20:9-121
 MERGED from [com.google.maps.android:android-maps-utils:0.4.4] C:\Users\Owner\.android\build-cache\83d1f05883a30279f30813cbe2059578179bda6e\output\AndroidManifest.xml:8:9-10:69
 	android:value
-		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam\app\src\main\AndroidManifest.xml:47:13-66
+		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml:44:13-66
 	android:name
-		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam\app\src\main\AndroidManifest.xml:46:13-58
-activity#com.simons.owner.traffickcam.HotelListActivity
-ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam\app\src\main\AndroidManifest.xml:49:9-55
+		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml:43:13-58
+activity#com.gun0912.tedpicker.ImagePickerActivity
+ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml:46:9-53:20
 	android:name
-		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam\app\src\main\AndroidManifest.xml:49:19-52
-activity#com.simons.owner.traffickcam.HotelInfoActivity
-ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam\app\src\main\AndroidManifest.xml:50:9-55
+		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml:47:13-69
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml:48:13-52:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml:49:17-69
 	android:name
-		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam\app\src\main\AndroidManifest.xml:50:19-52
-activity#com.simons.owner.traffickcam.LabelPictureActivity
-ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam\app\src\main\AndroidManifest.xml:51:9-58
+		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml:49:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml:51:17-77
 	android:name
-		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam\app\src\main\AndroidManifest.xml:51:19-55
-activity#com.simons.owner.traffickcam.LabelPicture2Activity
-ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam\app\src\main\AndroidManifest.xml:52:9-59
+		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml:51:27-74
+activity#com.simons.owner.traffickcam2.MainActivity
+ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml:54:9-57:61
+	android:exported
+		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml:56:13-36
+	android:configChanges
+		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml:57:13-59
 	android:name
-		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam\app\src\main\AndroidManifest.xml:52:19-56
-activity#com.simons.owner.traffickcam.LabelPicture3Acitivity
-ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam\app\src\main\AndroidManifest.xml:53:9-69
+		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml:55:13-41
+activity#com.simons.owner.traffickcam2.ChangeHotelActivity
+ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml:58:9-61:56
+	android:label
+		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml:60:13-64
+	android:theme
+		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml:61:13-44
 	android:name
-		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam\app\src\main\AndroidManifest.xml:53:19-57
+		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml:59:13-48
 uses-sdk
-INJECTED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Owner\.android\build-cache\e8fc0b629ec3f5ea568a315369338fc3c3e667ba\output\AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support:design:26.0.0-alpha1] C:\Users\Owner\.android\build-cache\399727c2984454811c15770cadeb942a57162666\output\AndroidManifest.xml:21:5-23:62
 MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\Owner\.android\build-cache\6fbb049d0221b57ce5ef1588c547385c9a7e8ca9\output\AndroidManifest.xml:21:5-23:78
@@ -157,6 +175,7 @@ MERGED from [com.google.android.gms:play-services-location:10.0.1] C:\Users\Owne
 MERGED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\Owner\.android\build-cache\f53a7a5b13189e539c5bc38735a6cc4ae4107d2d\output\AndroidManifest.xml:17:5-42
 MERGED from [com.google.android.gms:play-services-tasks:10.0.1] C:\Users\Owner\.android\build-cache\e5d6bb8696dbb58776957232838c1cc053492f90\output\AndroidManifest.xml:3:5-42
 MERGED from [com.google.android.gms:play-services-basement:10.0.1] C:\Users\Owner\.android\build-cache\6d75fe332450eb861f57e78c65fd36208006eabd\output\AndroidManifest.xml:17:5-42
+MERGED from [com.github.google:cameraview:-SNAPSHOT] C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\build\intermediates\exploded-aar\com.github.google\cameraview\-SNAPSHOT\AndroidManifest.xml:17:5-19:41
 MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\Owner\.android\build-cache\ed720d19c0d76c0f3687aa3f1de16b1081421f16\output\AndroidManifest.xml:21:5-23:54
 MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\Owner\.android\build-cache\d00e9168d98e932856b60f9ebe35100ffae50d84\output\AndroidManifest.xml:21:5-23:63
 MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\Owner\.android\build-cache\a421cf6768c9eecad37f38a4f49e77dae46a3554\output\AndroidManifest.xml:21:5-23:60
@@ -164,14 +183,16 @@ MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\Owner\.
 MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\Owner\.android\build-cache\52a6dfbf397919b687afdd32afd211a38437223d\output\AndroidManifest.xml:21:5-23:61
 MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\Owner\.android\build-cache\89d0dda161288cee5d34551bb1b35ec0a1ccbe63\output\AndroidManifest.xml:21:5-23:58
 MERGED from [com.google.maps.android:android-maps-utils:0.4.4] C:\Users\Owner\.android\build-cache\83d1f05883a30279f30813cbe2059578179bda6e\output\AndroidManifest.xml:5:5-43
+MERGED from [com.android.volley:volley:1.0.0] C:\Users\Owner\.android\build-cache\3daecb99cba90fbc39013953a5fdc299c719e98a\output\AndroidManifest.xml:7:5-43
+MERGED from [com.commonsware.cwac:camera:0.6.12] C:\Users\Owner\.android\build-cache\fa8c44cd66b7ba92015ee2cb8616ced1418491fb\output\AndroidManifest.xml:7:5-9:41
 	tools:overrideLibrary
 		ADDED from [com.android.support:design:26.0.0-alpha1] C:\Users\Owner\.android\build-cache\399727c2984454811c15770cadeb942a57162666\output\AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
-		INJECTED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml
 meta-data#android.support.VERSION
 ADDED from [com.android.support:design:26.0.0-alpha1] C:\Users\Owner\.android\build-cache\399727c2984454811c15770cadeb942a57162666\output\AndroidManifest.xml:25:5-27:41
 MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\Owner\.android\build-cache\6fbb049d0221b57ce5ef1588c547385c9a7e8ca9\output\AndroidManifest.xml:25:5-27:41
@@ -189,10 +210,6 @@ MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\Owner\.a
 		ADDED from [com.android.support:design:26.0.0-alpha1] C:\Users\Owner\.android\build-cache\399727c2984454811c15770cadeb942a57162666\output\AndroidManifest.xml:27:9-38
 	android:name
 		ADDED from [com.android.support:design:26.0.0-alpha1] C:\Users\Owner\.android\build-cache\399727c2984454811c15770cadeb942a57162666\output\AndroidManifest.xml:26:9-47
-uses-permission#android.permission.CAMERA
-ADDED from [io.fotoapparat.fotoapparat:library:1.4.1] C:\Users\Owner\.android\build-cache\09316dcee947fb1a5410b92f90e9f6772079bd80\output\AndroidManifest.xml:9:5-65
-	android:name
-		ADDED from [io.fotoapparat.fotoapparat:library:1.4.1] C:\Users\Owner\.android\build-cache\09316dcee947fb1a5410b92f90e9f6772079bd80\output\AndroidManifest.xml:9:22-62
 uses-feature#0x00020000
 ADDED from [com.google.android.gms:play-services-maps:10.0.1] C:\Users\Owner\.android\build-cache\5191046dcaaba8a19022ca49567e330125394bc2\output\AndroidManifest.xml:21:5-77
 	android:glEsVersion
