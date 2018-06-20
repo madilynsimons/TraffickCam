@@ -98,11 +98,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="8dp"
             android:text="Room Number"
             android:textSize="14sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/ChangeHotelButton" />
+            app:layout_constraintTop_toBottomOf="@+id/HotelAddProgressBar" />
 
         <EditText
             android:id="@+id/HotelNumberText"

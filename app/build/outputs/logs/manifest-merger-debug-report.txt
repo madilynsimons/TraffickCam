@@ -15,7 +15,7 @@ ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\
 		INJECTED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml
 uses-feature#android.hardware.camera
 ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml:6:5-8:35
-MERGED from [com.github.google:cameraview:-SNAPSHOT] C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\build\intermediates\exploded-aar\com.github.google\cameraview\-SNAPSHOT\AndroidManifest.xml:23:5-60
+MERGED from [com.github.google:cameraview:c3f7e7dbd2] C:\Users\Owner\.android\build-cache\b6b9503cb522ad09535786877c180f6ecc1b0c34\output\AndroidManifest.xml:23:5-60
 	android:required
 		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml:8:9-32
 		MERGED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml:8:9-32
@@ -27,7 +27,7 @@ ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\
 		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml:9:19-63
 uses-feature#android.hardware.camera.autofocus
 ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml:10:5-12:36
-MERGED from [com.github.google:cameraview:-SNAPSHOT] C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\build\intermediates\exploded-aar\com.github.google\cameraview\-SNAPSHOT\AndroidManifest.xml:24:5-26:36
+MERGED from [com.github.google:cameraview:c3f7e7dbd2] C:\Users\Owner\.android\build-cache\b6b9503cb522ad09535786877c180f6ecc1b0c34\output\AndroidManifest.xml:24:5-26:36
 	android:required
 		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml:12:9-33
 	android:name
@@ -40,7 +40,7 @@ MERGED from [com.google.android.gms:play-services-maps:10.0.1] C:\Users\Owner\.a
 uses-permission#android.permission.CAMERA
 ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml:15:5-65
 MERGED from [io.fotoapparat.fotoapparat:library:1.4.1] C:\Users\Owner\.android\build-cache\09316dcee947fb1a5410b92f90e9f6772079bd80\output\AndroidManifest.xml:9:5-65
-MERGED from [com.github.google:cameraview:-SNAPSHOT] C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\build\intermediates\exploded-aar\com.github.google\cameraview\-SNAPSHOT\AndroidManifest.xml:21:5-65
+MERGED from [com.github.google:cameraview:c3f7e7dbd2] C:\Users\Owner\.android\build-cache\b6b9503cb522ad09535786877c180f6ecc1b0c34\output\AndroidManifest.xml:21:5-65
 	android:name
 		ADDED from C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\src\main\AndroidManifest.xml:15:22-62
 uses-permission#android.permission.ACCESS_NETWORK_STATE
@@ -90,7 +90,7 @@ MERGED from [com.google.android.gms:play-services-location:10.0.1] C:\Users\Owne
 MERGED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\Owner\.android\build-cache\f53a7a5b13189e539c5bc38735a6cc4ae4107d2d\output\AndroidManifest.xml:18:5-20:19
 MERGED from [com.google.android.gms:play-services-tasks:10.0.1] C:\Users\Owner\.android\build-cache\e5d6bb8696dbb58776957232838c1cc053492f90\output\AndroidManifest.xml:4:5-19
 MERGED from [com.google.android.gms:play-services-basement:10.0.1] C:\Users\Owner\.android\build-cache\6d75fe332450eb861f57e78c65fd36208006eabd\output\AndroidManifest.xml:19:5-21:19
-MERGED from [com.github.google:cameraview:-SNAPSHOT] C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\build\intermediates\exploded-aar\com.github.google\cameraview\-SNAPSHOT\AndroidManifest.xml:28:5-20
+MERGED from [com.github.google:cameraview:c3f7e7dbd2] C:\Users\Owner\.android\build-cache\b6b9503cb522ad09535786877c180f6ecc1b0c34\output\AndroidManifest.xml:28:5-20
 MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\Owner\.android\build-cache\ed720d19c0d76c0f3687aa3f1de16b1081421f16\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\Owner\.android\build-cache\d00e9168d98e932856b60f9ebe35100ffae50d84\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\Owner\.android\build-cache\a421cf6768c9eecad37f38a4f49e77dae46a3554\output\AndroidManifest.xml:29:5-20
@@ -175,7 +175,7 @@ MERGED from [com.google.android.gms:play-services-location:10.0.1] C:\Users\Owne
 MERGED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\Owner\.android\build-cache\f53a7a5b13189e539c5bc38735a6cc4ae4107d2d\output\AndroidManifest.xml:17:5-42
 MERGED from [com.google.android.gms:play-services-tasks:10.0.1] C:\Users\Owner\.android\build-cache\e5d6bb8696dbb58776957232838c1cc053492f90\output\AndroidManifest.xml:3:5-42
 MERGED from [com.google.android.gms:play-services-basement:10.0.1] C:\Users\Owner\.android\build-cache\6d75fe332450eb861f57e78c65fd36208006eabd\output\AndroidManifest.xml:17:5-42
-MERGED from [com.github.google:cameraview:-SNAPSHOT] C:\Users\Owner\Documents\Projects\AndroidStudioProjects\_traffickcam\v2\TraffickCam2\app\build\intermediates\exploded-aar\com.github.google\cameraview\-SNAPSHOT\AndroidManifest.xml:17:5-19:41
+MERGED from [com.github.google:cameraview:c3f7e7dbd2] C:\Users\Owner\.android\build-cache\b6b9503cb522ad09535786877c180f6ecc1b0c34\output\AndroidManifest.xml:17:5-19:41
 MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\Owner\.android\build-cache\ed720d19c0d76c0f3687aa3f1de16b1081421f16\output\AndroidManifest.xml:21:5-23:54
 MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\Owner\.android\build-cache\d00e9168d98e932856b60f9ebe35100ffae50d84\output\AndroidManifest.xml:21:5-23:63
 MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\Owner\.android\build-cache\a421cf6768c9eecad37f38a4f49e77dae46a3554\output\AndroidManifest.xml:21:5-23:60

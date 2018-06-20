@@ -38,7 +38,7 @@ dependencies {
     compile 'io.fotoapparat.fotoapparat:library:1.4.1'
     compile 'com.google.android.gms:play-services-maps:10.0.1'
     compile 'com.google.android.gms:play-services-location:10.0.1'
-    compile 'com.github.google:cameraview:-SNAPSHOT'
+    compile 'com.github.google:cameraview:c3f7e7dbd2'
     compile 'com.google.code.gson:gson:2.8.2'
     compile 'com.google.maps.android:android-maps-utils:0.4.4'
     compile 'com.android.volley:volley:1.0.0'

@@ -216,12 +216,12 @@
         "source": "C:\\Users\\Owner\\.android\\build-cache\\6fbb049d0221b57ce5ef1588c547385c9a7e8ca9\\output\\res\\drawable\\abc_switch_thumb_material.xml"
     },
     {
-        "merged": "C:\\Users\\Owner\\Documents\\Projects\\AndroidStudioProjects\\_traffickcam\\v2\\TraffickCam2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_bg.xml",
-        "source": "C:\\Users\\Owner\\Documents\\Projects\\AndroidStudioProjects\\_traffickcam\\v2\\TraffickCam2\\app\\src\\main\\res\\drawable\\btn_bg.xml"
-    },
-    {
         "merged": "C:\\Users\\Owner\\Documents\\Projects\\AndroidStudioProjects\\_traffickcam\\v2\\TraffickCam2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\no_image.png",
         "source": "C:\\Users\\Owner\\Documents\\Projects\\AndroidStudioProjects\\_traffickcam\\v2\\TraffickCam2\\app\\src\\main\\res\\drawable\\no_image.png"
+    },
+    {
+        "merged": "C:\\Users\\Owner\\Documents\\Projects\\AndroidStudioProjects\\_traffickcam\\v2\\TraffickCam2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_bg.xml",
+        "source": "C:\\Users\\Owner\\Documents\\Projects\\AndroidStudioProjects\\_traffickcam\\v2\\TraffickCam2\\app\\src\\main\\res\\drawable\\btn_bg.xml"
     },
     {
         "merged": "C:\\Users\\Owner\\Documents\\Projects\\AndroidStudioProjects\\_traffickcam\\v2\\TraffickCam2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_camera.png",

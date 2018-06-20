@@ -20,13 +20,13 @@ public final class R {
         public static final int off = 0x7f100032;
         public static final int on = 0x7f100033;
         public static final int redEye = 0x7f100034;
-        public static final int surface_view = 0x7f1000dd;
-        public static final int texture_view = 0x7f1000de;
+        public static final int surface_view = 0x7f1000de;
+        public static final int texture_view = 0x7f1000df;
         public static final int torch = 0x7f100035;
     }
     public static final class layout {
-        public static final int surface_view = 0x7f04004e;
-        public static final int texture_view = 0x7f04004f;
+        public static final int surface_view = 0x7f04004f;
+        public static final int texture_view = 0x7f040050;
     }
     public static final class style {
         public static final int Widget_CameraView = 0x7f0b0174;
